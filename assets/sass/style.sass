@@ -1,0 +1,22 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import 'addition/poole'
+@import 'addition/hyde'
+@import 'vars/syntax'
+
+@mixin flex-center
+	display: flex
+	justify-content: center
+	align-items: center
+
+.main-header
+	margin-left: 14rem
+	min-height: 400px
+	background: url(../hero/hero-img.jpg) no-repeat top fixed
+	+flex-center
+
+.half
+	width: 50%
+	margin: 1rem
