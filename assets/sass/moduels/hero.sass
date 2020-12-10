@@ -1,0 +1,25 @@
+.hero
+	min-height: 400px
+	background: url(../hero/hero-img.jpg) no-repeat top fixed
+
+.hero__paragraph
+	margin-bottom: 2rem
+	max-width: 600px
+
+.hero.content
+  margin-left: 14em
+  padding-left: 5%
+  max-width: 100%
+  margin-right: 0
+
+  h2
+    font-size: calc(1em + 1vw)
+    // min, preferred, max
+    font-size: clamp(1rem, 90vw, 2.5rem)
+
+
+
+
+@media (max-width: 48rem)
+  .hero.content
+    margin-left: 0

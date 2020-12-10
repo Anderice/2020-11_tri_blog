@@ -2,21 +2,32 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+// Include original theme
 @import 'addition/poole'
 @import 'addition/hyde'
 @import 'vars/syntax'
 
-@mixin flex-center
-	display: flex
-	justify-content: center
-	align-items: center
+// Include MY Other css files
+@import 'vars/vars'
 
-.main-header
-	margin-left: 14rem
-	min-height: 400px
-	background: url(../hero/hero-img.jpg) no-repeat top fixed
-	+flex-center
+// Include MY moduels
+@import 'moduels/btn'
+@import 'moduels/sidebar'
+@import 'moduels/hero'
+@import 'moduels/footer'
 
-.half
-	width: 50%
-	margin: 1rem
+a
+	color: inherit
+	&:hover, &:focus
+		text-decoration: none
+
+
+.post
+
+
+.theme-tri-dondon
+	background: $light-1
+
+.theme-tri-dondon .sidebar
+	background: $white
+	color: $dark

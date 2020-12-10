@@ -33,6 +33,10 @@ plugins:
 sass:
   sass_dir: assets/sass
   style: compressed
+  
+# Server Config options
+livereload: true     # You no longer need to include --livereload
+reload_port: 5678    # If you don't want to use the default port
 
 defaults:
   -
@@ -40,4 +44,4 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
-      image: /assets/hero/hero-img.jpg
+      image: /assets/placehold.png

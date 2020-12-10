@@ -3,12 +3,16 @@
 
 {% include head.html %}
 
-<body>
+<body class="theme-tri-dondon">
 
   {% include sidebar.html %}
   {% include hero.html %}
   <div class="content container">
+
     {{ content }}
+  </div>
+  <div class="container">
+    {% include footer.html %}
   </div>
 
 </body>
