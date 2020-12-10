@@ -1,15 +1,27 @@
 .footer
-  text-align: center
 
 .footer-content
   display: flex
 
 .footer-item
-  flex: 1
-  max-height: 200px
-  overflow: hidden
+  margin: 0 1rem
+
+.footer-item__about
+  max-width: 200px
+
+.footer-item__lead
+  +flex-center
+  h3
+    font-size: calc(1em + 1vw)
+    // min, preferred, max
+    font-size: clamp(1rem, 90vw, 1.5rem)
+
 
 .copyright
   color: $light
   background: $dark
   padding: .5rem
+
+@media (max-width: 48rem)
+  .footer
+    background: red
