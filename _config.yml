@@ -17,7 +17,10 @@ author:
   name:           'Mark Otto'
   url:            https://twitter.com/mdo
 
-paginate:         5
+paginate: 6
+paginate_path: "/page:num/"
+
+
 
 # Custom vars
 version:          2.1.0
@@ -34,8 +37,6 @@ sass:
   sass_dir: assets/sass
   style: compressed
   
-# Server Config options
-livereload: true     # You no longer need to include --livereload
 
 defaults:
   -

@@ -1,27 +1,47 @@
 .footer
+  margin-top: 5rem
 
 .footer-content
   display: flex
 
-.footer-item
-  margin: 0 1rem
-
+// Left about
 .footer-item__about
-  max-width: 200px
+  flex: 30%
 
+  img
+    float: left
+    margin-right: .8rem
+    max-width: 70px
+
+// Right lead txt&img
 .footer-item__lead
-  +flex-center
+  flex: 70%
+
+
   h3
     font-size: calc(1em + 1vw)
     // min, preferred, max
     font-size: clamp(1rem, 90vw, 1.5rem)
 
+.footer-lead__txt
+  display: none
+
+.footer-lead__img
+  width: 100%
+
+
+
+body
+  position: relative
 
 .copyright
+  writing-mode: vertical-lr
+  position: absolute
+  bottom: 0
+  right: 0
   color: $light
   background: $dark
   padding: .5rem
 
 @media (max-width: 48rem)
   .footer
-    background: red

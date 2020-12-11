@@ -1,4 +1,18 @@
 a.sidebar-nav-item
+  transition: .3s
+  display: flex
+  align-items: center
+
+  &::before
+    content: ''
+    display: inline-block
+    width: 10px
+    height: 2px
+    background: $primary
+    margin-right: .5rem
+
+  &:hover
+    transform: translateX(10px)
   &:hover, &:focus
     text-decoration: none
 
@@ -7,3 +21,8 @@ a.sidebar-nav-item
 
 .sidebar-logo
   font-size: 1.2rem
+
+  img
+    padding-bottom: 2rem
+    max-width: 100px
+    margin: 0 auto
