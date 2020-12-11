@@ -7,12 +7,17 @@ a.sidebar-nav-item
     content: ''
     display: inline-block
     width: 10px
-    height: 2px
+    height: .1rem
     background: $primary
     margin-right: .5rem
+    transition: .3s
 
   &:hover
     transform: translateX(10px)
+
+    &::before
+      height: 10px
+
   &:hover, &:focus
     text-decoration: none
 

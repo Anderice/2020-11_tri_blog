@@ -1,16 +1,23 @@
 .pagination
+  font-family: inherit
   display: flex
   justify-content: center
-  align-items: center
-  font-family: inherit
-  color: gray
 
+  .pagination-wrapper
+    font-family: inherit
+    font-size: .7rem
+    color: gray
+    display: flex
+    align-items: center
 
 .pagination-list
   font-size: 1.3rem
-  padding: 0 .5rem
+  padding: 0 .1rem
+  margin: 0 1rem
 
 .pagination-item
+  border: 0
+  letter-spacing: 2px
   max-width: 150px
   padding: .4rem
   float: none
@@ -18,10 +25,23 @@
   transition: .3s
 
 .pagination-selected
+  position: relative
   font-style: normal
-  text-decoration: underline
   font-weight: 500
+  color: $light
+
+  &::after
+    z-index: -1
+    content: ''
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    height: 110%
+    width: 220%
+    background: $dark
+    border-radius: 5px
 
 .pagination-item--disable
 	color: $light
-	border-color: $light

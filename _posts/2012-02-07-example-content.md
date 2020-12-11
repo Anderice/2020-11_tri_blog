@@ -1,8 +1,11 @@
 ---
 layout: post
-title: Example content
+title: Example contentaaa
+categories: [Design, Redesign]
 ---
 
+* This will become a table of contents (this text will be scrapped).
+{:toc}
 
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.

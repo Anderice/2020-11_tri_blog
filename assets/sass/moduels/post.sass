@@ -1,19 +1,19 @@
 .posts
 	margin-top: -2rem
 	display: flex
+	justify-content: center
 	flex-wrap: wrap
-	flex-basis: 0 0 33.333333%
 	display: grid
 	grid-template-columns: repeat(auto-fill, minmax(360px,1fr))
 
-
 .post-item
-	margin: .5rem
+	position: relative
+	flex: 1
 	background: white
 	transition: .3s
-
-	img
-		transform: scale(1.02)
+	border-radius: 5px
+	margin: 0 .5rem
+	margin-bottom: 2rem
 
 	&:hover, &:focus, &:target
 		transform: translateY(-10px)
@@ -22,10 +22,32 @@
 		min-height: 300px
 		object-fit: cover
 
+@supports not (display: grid)
+  .post-item
+		min-width: 300px
+
+// For IE 11 and older
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	.post-item
+		min-width: 300px
+
 .post-title
 	margin-top: 1rem
 	letter-spacing: 1pt
 
-.post-item__content
+.post-item__categories
+	position: absolute
+	bottom: 1rem
+	left: 1rem
+  color: #9a9a9a
 
+
+.post-item__date
+  display: block
+  margin-top: -.5rem
+  margin-bottom: 1rem
+  color: #9a9a9a
+
+.post-item__content
 	margin: 0 1rem
+	padding-bottom: 3.5rem
