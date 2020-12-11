@@ -4,8 +4,14 @@
 .footer-content
   display: flex
 
+@media (max-width: 68rem)
+  .footer-content
+    flex-direction: column
+
 // Left about
 .footer-item__about
+  margin-right: -1rem
+  z-index: 1
   flex: 30%
 
   img
@@ -28,6 +34,7 @@
 
 .footer-lead__img
   width: 100%
+  max-height: 350px
 
 
 
