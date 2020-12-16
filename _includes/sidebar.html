@@ -11,7 +11,7 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">首頁</a>
 
       {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -27,6 +27,9 @@
       {% endif %}
       {% endfor %}
     </nav>
+    <a class="sidebar__social" href="https://instagram.com" target="_blank">
+      <img src="{{ site.baseurl }}assets/social/ig.svg" alt="Instagram">
+    </a>
 
   </div>
 </div>

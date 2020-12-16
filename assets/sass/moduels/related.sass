@@ -1,6 +1,18 @@
 .related
+	position: relative
+	padding-top: .5rem
 	border-width: 2px
-	border-color: $dark
+	border-color: $light
+
+	&::before
+		position: absolute
+		content: ''
+		display: block
+		top: 0
+		left: 0
+		width: 100px
+		height: 5px
+		background: $light
 
 	h2
 		margin-bottom: 2rem

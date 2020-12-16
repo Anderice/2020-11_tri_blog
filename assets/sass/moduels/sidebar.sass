@@ -1,3 +1,15 @@
+.sidebar
+  text-align: left
+
+@media (max-width: 48em)
+  .sidebar-about
+    text-align: center
+    max-width: 80%
+    margin: 0 auto
+    margin-bottom: 2rem
+    border-bottom: 2px solid $light
+
+
 a.sidebar-nav-item
   transition: .3s
   display: flex
@@ -31,3 +43,16 @@ a.sidebar-nav-item
     padding-bottom: 2rem
     max-width: 100px
     margin: 0 auto
+
+.sidebar__social
+  text-align: left!important
+  display: inline-block
+  margin-bottom: 3rem
+  img
+
+    max-width: 30px
+    opacity: .2
+    transition: .3s
+
+    &:hover, &:active, &:target
+      opacity: 1

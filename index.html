@@ -1,6 +1,6 @@
 ---
 layout: index
-title: Home
+title: 首頁
 ---
 <div class="posts">
     {% for post in paginator.posts %}
@@ -19,7 +19,12 @@ title: Home
           <!-- Word maxium -->
           {{ post.excerpt | truncatewords: 26  }}
           {% endif %}
-          <span class="post-item__categories">— 來自分類 {{ post.categories }}</span>
+          <span class="post-item__categories">分類於——
+            <a href="/categories/#{{post.categories}}{% if post.categories == empty %}uncategorized{% endif %}">
+               {% if post.categories == empty %}未分類{% endif %}
+               {{ post.categories }}
+            </a>
+          </span>
         </div>
       </div>
     {% endfor %}
@@ -32,7 +37,7 @@ title: Home
         {% if paginator.previous_page %}
           <a class="pagination-item" href="{{ paginator.previous_page_path | relative_url }}">&laquo; 上一頁</a>
         {% else %}
-          <span class="pagination-item pagination-item--disable">&laquo; 沒有上一頁</span>
+          <span class="pagination-item pagination-item--disable">&laquo;  上一頁</span>
         {% endif %}
 
         <!-- Pagination list -->
@@ -50,7 +55,7 @@ title: Home
         {% if paginator.next_page %}
           <a class="pagination-item" href="{{ paginator.next_page_path | relative_url }}">下一頁 &raquo;</a>
         {% else %}
-          <span class="pagination-item pagination-item--disable">沒有下一頁 &raquo;</span>
+          <span class="pagination-item pagination-item--disable">下一頁 &raquo;</span>
         {% endif %}
       </div>
       {% endif %}

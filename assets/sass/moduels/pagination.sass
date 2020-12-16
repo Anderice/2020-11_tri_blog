@@ -12,14 +12,13 @@
 
 .pagination-list
   font-size: 1.3rem
-  padding: 0 .1rem
   margin: 0 1rem
 
 .pagination-item
   border: 0
   letter-spacing: 2px
   max-width: 150px
-  padding: .4rem
+  padding: .5rem
   float: none
   white-space: nowrap
   transition: .3s
@@ -29,6 +28,8 @@
   font-style: normal
   font-weight: 500
   color: $light
+  border-bottom: 2px solid $light
+  padding: 0 3%
 
   &::after
     z-index: -1
@@ -40,8 +41,9 @@
     transform: translate(-50%, -50%)
     height: 110%
     width: 220%
-    background: $dark
+
     border-radius: 5px
+
 
 .pagination-item--disable
 	color: $light
