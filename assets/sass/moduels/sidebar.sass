@@ -1,14 +1,14 @@
 .sidebar
   text-align: left
 
+
 @media (max-width: 48em)
   .sidebar-about
     text-align: center
     max-width: 80%
     margin: 0 auto
     margin-bottom: 2rem
-    border-bottom: 2px solid $light
-
+    border-bottom: 2px solid $gray-8
 
 a.sidebar-nav-item
   transition: .3s
@@ -56,3 +56,19 @@ a.sidebar-nav-item
 
     &:hover, &:active, &:target
       opacity: 1
+
+.sub-sidebar
+  display: none
+  z-index: 100
+  position: fixed
+  bottom: 0
+  left: 0
+  justify-content: space-around
+  background: $primary
+  color: $gray-2
+  padding: 1rem
+  width: 100%
+
+@media (max-width: 48rem)
+  .sub-sidebar
+    display: flex

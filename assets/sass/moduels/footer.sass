@@ -1,5 +1,8 @@
 .footer
-  margin-top: 5rem
+  z-index: -1
+  background: $gray-2
+  position: fixed
+  bottom: 0
 
 .footer-content
   display: flex
@@ -23,7 +26,6 @@
 .footer-item__lead
   flex: 70%
 
-
   h3
     font-size: calc(1em + 1vw)
     // min, preferred, max
@@ -33,22 +35,38 @@
   display: none
 
 .footer-lead__img
+  overflow: hidden
   width: 100%
-  max-height: 350px
-
-
-
-body
+  height: 100%
   position: relative
+  outline-color: 10px solid red
 
-.copyright
-  writing-mode: vertical-lr
-  position: absolute
-  bottom: 0
-  right: 0
-  color: $light
-  background: $dark
-  padding: .5rem
+  img
+    position: absolute
+    max-width: 40%
+    bottom: -20%
+
+
+.footer-lead__img-1
+
+
+.footer-lead__img-2
+  left: 25%
+
+.footer-lead__img-3
+  left: 60%
 
 @media (max-width: 48rem)
+  .footer-lead__img
+    display: none
+
   .footer
+    margin-bottom: 70px
+
+
+
+.copyright
+  color: $gray-2
+  background: $gray-9
+  width: 100%
+  padding: .5rem

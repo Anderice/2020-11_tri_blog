@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
   {% include head.html %}
-  {% include hero.html %}
   <body class="theme-tri-dondon">
+    <div class="container">
+      {% include hero.html %}
+    </div>
     {% include sidebar.html %}
     <div class="container-fluid">
       {{ content }}
