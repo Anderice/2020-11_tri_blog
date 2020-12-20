@@ -4,14 +4,21 @@
 {% include head.html %}
 
 <body class="theme-tri-dondon">
+  <div class="wrapper">
+    <!-- Left -->
+    {% include sidebar.html %}
 
-  {% include sidebar.html %}
-  <div class="content container">
-    {{ content }}
+    <div class="wrapper__right">
+      <div class="content container">
+        {{ content }}
+      </div>
+
+      {% include footer.html %}
+
+    </div>
   </div>
-  <div class="container-fluid">
-    {% include footer.html %}
-  </div>
+
+
 
 </body>
 

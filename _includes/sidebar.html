@@ -1,5 +1,4 @@
-<div class="sidebar">
-  <div class="container">
+<aside class="sidebar">
     <div class="sidebar-about">
       <h1 class="sidebar-logo">
         <a href="{{ site.baseurl }}">
@@ -27,11 +26,18 @@
       {% endif %}
       {% endfor %}
     </nav>
-    <a class="sidebar__social" href="https://instagram.com" target="_blank">
-      <img src="{{ site.baseurl }}assets/social/ig.svg" alt="Instagram">
-    </a>
-  </div>
-</div>
+    <div class="sidebar__social">
+      <ul>
+        <li>
+          <a href="https://instagram.com" target="_blank">
+            <img src="{{ site.baseurl }}assets/social/ig.svg" alt="Instagram">
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+</aside>
 
 
 <div class="sub-sidebar">

@@ -1,9 +1,10 @@
 .posts
+	width: 100%
 	margin-top: -2rem
 	display: flex
 	justify-content: center
 	flex-wrap: wrap
-	display: grid
+	// min-width: 300px
 	grid-template-columns: repeat(auto-fill, minmax(360px,1fr))
 
 .post-item
@@ -14,12 +15,15 @@
 	border-radius: 5px
 	margin: 0 .5rem
 	margin-bottom: 2rem
+	min-width: 300px
+	max-width: 500px
 
 	&:hover, &:focus, &:target
 		transform: translateY(-10px)
 
 	img
 		min-height: 300px
+		width: 100%
 		object-fit: cover
 
 @supports not (display: grid)
