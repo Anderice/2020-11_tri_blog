@@ -1,6 +1,3 @@
-source:           .
-destination:      ./tri_blog
-
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge
@@ -14,7 +11,7 @@ title:            Tridondon-Blog
 tagline:          'A Jekyll theme'
 description:      '三角東東是……等專業人士共同組成，讓美感與設計蔓延至您生活的每一個角落。'
 url:              http://hyde.getpoole.com
-baseurl:          '/'
+baseurl:          'tri_blog'
 
 author:
   name:           'Mark Otto'
