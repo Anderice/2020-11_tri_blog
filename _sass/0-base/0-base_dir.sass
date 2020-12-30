@@ -1,6 +1,33 @@
 @import "test"
 @import "normalize"
-
 @import "vars"
 @import "poole"
 @import "hyde"
+
+// Theme overwrite
+.theme-tri-dondon
+	background: $gray-2
+
+.theme-tri-dondon .sidebar
+	background: $gray-2
+	color: $gray-9
+
+// Basic overwrite
+
+h1, h2, h3, h4, h5, h6
+  color: inherit
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+a
+	color: $primary-passive
+
+	&:hover, &:focus
+	 text-decoration: none
+
+img
+  max-width: 100%
+  object-fit: cover

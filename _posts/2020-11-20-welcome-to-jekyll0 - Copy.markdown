@@ -1,30 +1,51 @@
 ---
 layout: post
-title:  "Title-b"
+title:  "緣來是這樣！"
 date:   2020-11-20 21:22:52 +0800
 categories: jekyll update
 
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+《緣起》
 
-Jekyll requires blog post files to be named according to the following format:
 
-`YEAR-MONTH-DAY-title.MARKUP`
+#緣來是這樣！
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+##郝菲---(設計無所不在，這句話在空氣中回響著，我們幾乎可以這麼說：每一次呼吸中都能嗅得到它的氣息)
+(隨意的照片有關設計就好)
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+在生活上的每一處都能看見設計的影子。設計雖然並非是生活必需品，但是有了設計能夠讓我們身處的世界更佳的完好。
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+
+(學校門口照片)
+
+
+臺中科技大學，是一所具有百年歷史的學校。
+它聚集了眾多的學生和優秀的師資於此，秉持多元學習、宏觀視野、智慧服務與現代校園的願景管理著，即便如此，校園環境內的種種跡象卻顯示出，學校缺乏宏觀視野及現代校園的跡象。
+
+
+##當代的社會意識
+
+
+近年來，在社會設計與通用設計的意識抬頭下，各個場所的設計系統都逐漸得到重視。以近期臺灣設計研究院的校園優化、台灣大學的校徽、陽明交通大學的設計案…等來看，這些設計趨勢開始嘗試與校園做結合。
+
+
+(舊的地圖照片)
+
+
+中科大，作為臺灣百年的國立學校，同時又擁有優良設計學院，竟然出現了視覺識別系統不完整的嚴重問題。不論是一個圖樣出現數個版本，抑或是設計的地圖形同虛設，這些狀況，使得校外人士對於校園的認知都大打折扣。
+
+基於此外，團隊具備平面設計、網頁設計…等專長的良好條件，才決定優化臺中科技大學的視覺識別系統。讓更多學生、老師、外籍生與外來人士，能更方便且明確的欣賞這片美麗的校園。
+
+
+##對於未來的期盼
+
+
+希望，藉由一「臺中科技大學視覺識別系統優化」專案計畫，讓缺乏校園視覺識別系統的它能重獲新生，更能符合朝向國際化的願景前進。因此，團隊以「生活在一個具有美感與設計的教育環境」為目標，進行此項計畫。
+
+
+註釋：通用設計又名全民設計、全方位設計或是通用化設計，是指無須改良或特別設計就能為所有人使用的產品、環境及通訊。除了考量身障者和其他弱勢使用族群，也顧及一般人的使用情況及需求，不僅考量使用者的使用情形，還顧慮到使用時的心理感受。在學術領域，「Universal Design」還有一個名稱為「共用性設計」。
+
+
+圖/文：國立臺中科技大學 商業設計系/三角東東團隊/緣來是這樣！

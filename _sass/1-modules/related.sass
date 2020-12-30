@@ -1,18 +1,4 @@
 .related
-	position: relative
-	padding-top: .5rem
-	border-width: 2px
-	border-color: $gray-8
-
-	&::before
-		position: absolute
-		content: ''
-		display: block
-		top: 0
-		left: 0
-		width: 100px
-		height: 5px
-		background: $gray-8
 
 	h2
 		margin-bottom: 2rem
@@ -21,21 +7,30 @@
 		margin: 0
 
 .related-posts
+
+	text-align: center
 	display: flex
 
+	flex-wrap: wrap
+
 	img
-		min-width: 100%
+		margin: 0 auto
+		margin-bottom: 1rem
+		max-width: 100%
+		transform: scale(1.05)
+
 
 	li
+		max-width: 300px
 		border-radius: 5px
 		margin: 0 1rem
+		transition: .3s
 
 		&:hover
+			transform: translateY(-10px)
 			background: white
 
-	img
-		max-width: 200px
 
 .related__content
-	margin: 0 .5rem
-	padding-bottom: .5rem
+	margin: 0 1rem
+	padding-bottom: .9rem

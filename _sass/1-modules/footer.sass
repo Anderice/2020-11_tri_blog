@@ -6,24 +6,26 @@
 .footer-content
 	display: flex
 
+
 @media (max-width: 68rem)
 	.footer-content
 		flex-direction: column
 
 // Left about
+.footer-item
+
+	p
+		max-width: 350px
+
 .footer-item__about
 	margin-right: -1rem
 	z-index: 1
-	flex: 30%
 
-	img
-		float: left
-		margin-right: .8rem
-		max-width: 70px
+
 
 // Right lead txt&img
 .footer-item__lead
-	flex: 70%
+	flex: 40%
 
 	h3
 		font-size: calc(1em + 1vw)
@@ -42,12 +44,10 @@
 
 	img
 		position: absolute
-		max-width: 40%
+		height: 100%
 		bottom: -20%
 
-
 .footer-lead__img-1
-
 
 .footer-lead__img-2
 	left: 25%
@@ -65,7 +65,7 @@
 
 
 .copyright
-	color: $gray-2
-	background: $gray-9
+	letter-spacing: 2px
+	color: $gray-6
 	width: 100%
 	padding: .5rem

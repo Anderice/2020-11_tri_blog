@@ -1,30 +1,34 @@
 ---
 layout: post
-title:  "test-a"
+title:  "創新的三角形"
 date:   2020-11-20 21:22:52 +0800
 categories: jekyll update
 
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
 
-`YEAR-MONTH-DAY-title.MARKUP`
+三角東東團隊是一群由平面設計、企劃研究、網頁設計、商業設計、資料整合…等專業人士共同組成，團隊認為在優化設計過程中，不能只做視覺上的改善，<!--more-->更要思考，如何才能發揮工具最大的功用，以獲得良好的使用體驗！三角東東站在使用者的立場，根據不同的需求做出適當的變化，以「創新的設計」與「永續發展的精神」，讓美感與設計蔓延至您生活的每一個角落，走向世界潮流的先鋒。
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+## 王耀輝
+### 策略企劃
+讀萬卷書，行萬里路。
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+## 黃宗瑋
+### 網站設計師
+人生就像茶葉蛋，吃了就沒了。
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+## 陳郁馨
+### 平面設計師
+對不起都是我的錯，我馬上改。
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+## 陳奕杉
+### 文案指導
+沒有拳頭解決不了的事情，有的話就兩拳。
+
+## 周圻恆
+### 資訊管理
+生活就像是錯誤，需要設計來修補。
+
+
+圖/文：國立臺中科技大學 商業設計系/三角東東團隊/創新的三角形！

@@ -1,15 +1,29 @@
 .hero
-	min-height: 400px
+	position: relative
+	min-height: 600px
 	padding: 1rem 2rem
-	background: url(../hero/hero-img.jpg) no-repeat top fixed
+	background: url(../imgs/hero/hero-img.jpg) no-repeat top fixed
 	background-size: cover
 	display: flex
 	justify-content: center
 	flex-direction: column
 
+	&::after
+		top: 0
+		left: 0
+		position: absolute
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		background: black
+		opacity: .6
+
 
 
 .hero__conntent
+	z-index: 1
+	color: $gray-1
 	max-width: 600px
 
 	h2
