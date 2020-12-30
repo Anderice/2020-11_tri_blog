@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Title-1"
+title:  "Title-d"
 date:   2020-11-20 21:22:52 +0800
 categories: update
-image: ./assets/imgs/hero/hero-img.jpg
+
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
