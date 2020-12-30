@@ -8,7 +8,7 @@ title: 首頁
   {% for post in paginator.posts %}
   <div class="post post-item">
     <a href="{{ post.url }}">
-      <img src="{{ post.image | relative_url }}" alt="">
+      <img src="{{site.url}}/{{ post.image | relative_url }}" alt="">
     </a>
 
     <div class="post-item__content">
