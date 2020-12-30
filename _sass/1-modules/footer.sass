@@ -1,71 +1,71 @@
 .footer
-  z-index: -1
-  background: $gray-2
-  bottom: 0
+	z-index: -1
+	background: $gray-2
+	bottom: 0
 
 .footer-content
-  display: flex
+	display: flex
 
 @media (max-width: 68rem)
-  .footer-content
-    flex-direction: column
+	.footer-content
+		flex-direction: column
 
 // Left about
 .footer-item__about
-  margin-right: -1rem
-  z-index: 1
-  flex: 30%
+	margin-right: -1rem
+	z-index: 1
+	flex: 30%
 
-  img
-    float: left
-    margin-right: .8rem
-    max-width: 70px
+	img
+		float: left
+		margin-right: .8rem
+		max-width: 70px
 
 // Right lead txt&img
 .footer-item__lead
-  flex: 70%
+	flex: 70%
 
-  h3
-    font-size: calc(1em + 1vw)
-    // min, preferred, max
-    font-size: clamp(1rem, 90vw, 1.5rem)
+	h3
+		font-size: calc(1em + 1vw)
+		// min, preferred, max
+		font-size: clamp(1rem, 90vw, 1.5rem)
 
 .footer-lead__txt
-  display: none
+	display: none
 
 .footer-lead__img
-  overflow: hidden
-  width: 100%
-  height: 100%
-  position: relative
-  outline-color: 10px solid red
+	overflow: hidden
+	width: 100%
+	height: 100%
+	position: relative
+	outline-color: 10px solid red
 
-  img
-    position: absolute
-    max-width: 40%
-    bottom: -20%
+	img
+		position: absolute
+		max-width: 40%
+		bottom: -20%
 
 
 .footer-lead__img-1
 
 
 .footer-lead__img-2
-  left: 25%
+	left: 25%
 
 .footer-lead__img-3
-  left: 60%
+	left: 60%
 
 @media (max-width: 48rem)
-  .footer-lead__img
-    display: none
+	.footer-lead__img
+		display: none
 
-  .footer
-    margin-bottom: 70px
+	.footer
+		margin-bottom: 70px
 
 
 
 .copyright
-  color: $gray-2
-  background: $gray-9
-  width: 100%
-  padding: .5rem
+	color: $gray-2
+	background: $gray-9
+	width: 100%
+	padding: .5rem
