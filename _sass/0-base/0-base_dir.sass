@@ -1,6 +1,9 @@
-@import "test"
+// Reset
 @import "normalize"
+@import "test"
 @import "vars"
+
+// Library
 @import "poole"
 @import "hyde"
 
@@ -13,6 +16,10 @@
 	color: $gray-9
 
 // Basic overwrite
+html
+	font-family: "Public Sans", "Noto Sans TC", Helvetica, Arial, sans-serif
+	line-height: 1.65
+	letter-spacing: 1px
 
 h1, h2, h3, h4, h5, h6
 	color: inherit

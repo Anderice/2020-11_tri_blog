@@ -1,13 +1,13 @@
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post post-item">
+  <div class="post-item">
     <a href="{{ post.url | relative_url }}">
       <img src=" {{ post.image | relative_url }}" alt="">
     </a>
 
     <div class="post-item__content">
       <a href="{{ post.url | relative_url }}">
-        <h2 class="post-title">{{ post.title }}</h2>
+        <h2 class="post-item__title">{{ post.title }}</h2>
       </a>
       <time class="post-item__date">{{ post.date | date_to_string }}</time>
       <!-- Excerpt stop point set -->
@@ -15,9 +15,8 @@
       {{ post.content | split:'<!--more-->' | first }}
       {% else %}
       <!-- Word maxium -->
-      {{ post.excerpt | truncatewords: 26  }}
+      {{ post.excerpt | strip_html | truncatewords: 26  }}
       {% endif %}
-      ……
       <span class="post-item__categories">分類於——
         <a href="/categories/#{{post.categories}}{% if post.categories == empty %}uncategorized{% endif %}">
           {% if post.categories == empty %}未分類{% endif %}
@@ -26,6 +25,7 @@
       </span>
     </div>
   </div>
+
   {% endfor %}
 </div>
 

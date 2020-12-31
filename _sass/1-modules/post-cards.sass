@@ -1,0 +1,62 @@
+.posts
+	max-width: 1220px
+	width: 80%
+	margin: 0 auto
+	margin-top: -2rem
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	// min-width: 300px
+	grid-template-columns: repeat(auto-fill, minmax(360px,1fr))
+
+.post-item
+	position: relative
+	flex: 1
+	font-size: .85rem
+	background: white
+	transition: .3s
+	border-radius: 5px
+	margin: 0 .8rem
+	margin-bottom: 2rem
+	min-width: 300px
+	max-width: 400px
+
+	&:hover, &:focus, &:target
+		transform: translateY(-10px)
+
+	img
+		transform: scale(1.03)
+		min-height: 300px
+		width: 100%
+		object-fit: cover
+
+@supports not (display: grid)
+	.post-item
+		min-width: 300px
+
+// For IE 11 and older
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	.post-item
+		min-width: 300px
+
+.post-item__content
+	margin: 0 1rem
+	padding-bottom: 4rem
+
+.post-item__title
+	margin-top: 1rem
+	letter-spacing: 1pt
+
+.post-item__date
+	display: block
+	margin-top: -.5rem
+	margin-bottom: 1rem
+	color: $gray-6
+
+.post-item__categories
+	position: absolute
+	bottom: 1rem
+	left: 1rem
+	font-size: .8rem
+	letter-spacing: 1px
+	color: $gray-6

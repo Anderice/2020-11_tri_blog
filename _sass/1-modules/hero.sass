@@ -1,11 +1,13 @@
 .hero
+	text-align: center
 	position: relative
-	min-height: 600px
+	height: 600px
 	padding: 1rem 2rem
 	background: url(../imgs/hero/hero-img.jpg) no-repeat top fixed
 	background-size: cover
 	display: flex
 	justify-content: center
+	align-items: center
 	flex-direction: column
 
 	&::after
@@ -22,24 +24,20 @@
 
 
 .hero__conntent
+	margin: 0 auto
 	z-index: 1
 	color: $gray-1
-	max-width: 600px
+
+
 
 	h2
-		font-size: calc(1em + 1vw)
+		letter-spacing: 2px
+		line-height: 1.55
+		font-size: calc(1em + 2vw)
 		// min, preferred, max
-		font-size: clamp(1rem, 90vw, 2.5rem)
-
-	p
 		margin-bottom: 2rem
 
-.hero.content
-	margin-left: 14em
-	padding-left: 5%
-	max-width: 100%
-	margin-right: 0
-
-@media (max-width: 48rem)
-	.hero.content
-		margin-left: 0
+@media (max-width: $media-md)
+	.hero__conntent
+		h2
+			font-weight: normal

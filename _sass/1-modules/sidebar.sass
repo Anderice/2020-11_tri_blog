@@ -8,6 +8,7 @@
 	position: relative
 	text-align: left
 	min-width: 20%
+	border-right: 2px solid $gray-3
 
 .sidebar-nav a
 	transition: .3s
@@ -39,7 +40,7 @@
 	font-size: 1.2rem
 
 	img
-		padding-bottom: 2rem
+		padding-bottom: 1rem
 		max-width: 100px
 
 .sidebar__social
@@ -67,10 +68,7 @@
 	padding: 1rem
 	width: 100%
 
-@media (max-width: 48em)
-	.wrapper
-		flex-direction: column
-
+@media (max-width: $media-md)
 	.sidebar-about
 		text-align: center
 		max-width: 80%
@@ -94,4 +92,6 @@
 		display: inline
 
 	.sidebar__social
-		+flex-center
+		display: flex
+		justify-content: center
+		align-items: center
