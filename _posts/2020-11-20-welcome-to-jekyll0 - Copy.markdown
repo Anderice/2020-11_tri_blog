@@ -10,9 +10,10 @@ excerpt: 近年來，在社會設計與通用設計的意識抬頭下，各個�
 
 {% include project-info.html %}
 
-![image]({{site.url}}/assets/imgs/placehold/1.jpg)
+![image]({site.url}/assets/imgs/placehold/1.jpg)
 
-![image]({{site.url}}/assets/imgs/placehold/2.png)
+
+<img src="{{ './assets/imgs/placehold/1.jpg' | relative_url }}" alt="Site Logo">
 
 ## 當代的社會意識
 
