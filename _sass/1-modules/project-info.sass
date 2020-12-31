@@ -1,13 +1,12 @@
 .project-info
   display: flex
-  align-items: center
+
   margin: 2rem 0
 
   li
     margin-bottom: 1.5rem
 
   h3
-
     letter-spacing: 2px
     color: $gray-6
     margin-top: 0
@@ -20,15 +19,18 @@
   width: 100%
 
 .project-info__description
-  max-width: 700px
+
+  width: 80%
   margin-right: 2rem
 
-@media (max-width: $media-md)
+@media (max-width: $media-lg)
   .project-info
     flex-direction: column
+
+  .project-info__details
+    margin-top: 2rem
 
 
 
 .project-info__details
-
-  min-width: 30%
+  font-size: 90%
