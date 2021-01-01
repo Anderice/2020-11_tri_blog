@@ -17,7 +17,13 @@
   </title>
 
   <!-- CSS -->
+
+  {% if page.title == "Home" %}
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+  {% else %}
+  <link rel="stylesheet" href=".{{ site.baseurl }}/assets/css/styles.css">
+  {% endif %}
+
 
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
   <link rel="stylesheet" href="{{ './assets/css/styles.css' | relative_url }}">
