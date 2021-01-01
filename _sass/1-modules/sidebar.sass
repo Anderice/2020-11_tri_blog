@@ -1,20 +1,32 @@
-.sidebar__contents
-
-	position: sticky
-	top: 3rem
-
 .sidebar
+	display: flex
 	padding: 2rem
 	position: relative
 	text-align: left
 	min-width: 20%
 	border-right: 2px solid $gray-3
 
-.sidebar-nav-item--active
-	background: red
-	outline: 10px solid red
+.sidebar .hide
+	display: none
 
-.sidebar-nav a
+.sidebar__contents
+	position: sticky
+	top: 3rem
+
+	p
+		font-size: 90%
+
+	a
+		color: $primary
+
+.sidebar__logo
+	font-size: 1.2rem
+
+	img
+		display: inline
+		max-width: 50px
+
+.sidebar__nav a
 	transition: .3s
 	display: flex
 	align-items: center
@@ -37,15 +49,9 @@
 	&:hover, &:focus
 		text-decoration: none
 
-.sidebar a
-	color: $primary
-
-.sidebar-logo
-	font-size: 1.2rem
-
-	img
-		padding-bottom: 1rem
-		max-width: 100px
+.sidebar__nav__item--active
+	background: red
+	outline: 10px solid red
 
 .sidebar__social
 	width: 100%
@@ -73,19 +79,19 @@
 	width: 100%
 
 @media (max-width: $media-md)
-	.sidebar-about
+	.sidebar__about
 		text-align: center
 		max-width: 80%
 		margin: 0 auto
 		margin-bottom: 2rem
 		border-bottom: 2px solid $gray-8
 
-	.sidebar-logo
-		img
+	.sidebar__logo
+
 			margin: 0 auto
 
-	.sidebar-nav
-		text-align: center
+	.sidebar__nav
+
 
 	.sub-sidebar
 		display: flex

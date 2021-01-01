@@ -1,6 +1,48 @@
+.page-progress
+  position: absolute
+  top: 0
+  left: 0
+  background: $gray-3
+  height: 100%
+
+
+.breadcrumbs-container
+  z-index: 500
+  position: relative
+  border-bottom: 2px solid $gray-3
+  position: sticky
+  top: 0
+
 .breadcrumbs
-  a, em
+  letter-spacing: 2px
+  display: flex
+  align-items: center
+  background: $gray-2
+
+
+  a, em, span
+    position: relative
+    z-index: 501
     opacity: .7
 
     &:hover, &:active, &:target
       opacity: 1
+
+@media (max-width: $media-sm)
+  .breadcrumbs
+    font-size: .9rem
+
+.breadcrumbs__back
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 50px
+  height: 70px
+  margin-right: 1rem
+  background: $primary-passive
+  border-right: 2px solid $gray-3
+  color: $gray-1
+  transition: .3s
+  &:hover
+    background: $primary
