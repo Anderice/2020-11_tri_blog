@@ -2,25 +2,23 @@
   position: absolute
   top: 0
   left: 0
-  background: $gray-3
+  background: $gray-4
   height: 100%
-
-
+  transition: .3s
 
 .breadcrumbs-container
   z-index: 500
   position: relative
   border-bottom: 2px solid $gray-3
-  position: sticky
+  position: fixed
   top: 0
+  transition: top .3s
 
 .breadcrumbs
   letter-spacing: 2px
   display: flex
   align-items: center
   background: $gray-2
-  transition: top .3s
-
 
   a, em, span
     position: relative
@@ -29,6 +27,9 @@
 
     &:hover, &:active, &:target
       opacity: 1
+
+  span
+    margin: 0 .5rem
 
 @media (max-width: $media-sm)
   .breadcrumbs
@@ -48,3 +49,10 @@
   transition: .3s
   &:hover
     background: $primary
+
+.breadcrumbs__newline
+  display: none
+
+@media (max-width: $media-xl)
+  .breadcrumbs__newline
+    display: block

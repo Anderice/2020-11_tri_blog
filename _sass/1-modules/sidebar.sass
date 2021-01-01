@@ -1,17 +1,27 @@
 .sidebar
+	position: relative
 	display: flex
-	padding: 2rem
+	justify-content: center
+	padding: 0
 	position: relative
 	text-align: left
-	min-width: 20%
+
+	min-width: 350px
 	border-right: 2px solid $gray-3
 
-.sidebar .hide
-	display: none
+@media (max-width: $media-lg)
+	.sidebar
+		width: 100%
 
+
+// Sidebar Contents
 .sidebar__contents
-	position: sticky
-	top: 3rem
+	width: 350px
+	text-align: center
+	position: fixed
+	padding: 0 2rem
+	margin: 2rem 0
+
 
 	p
 		font-size: 90%
@@ -21,17 +31,36 @@
 		&:hover
 			color: $primary
 
-.sidebar__logo
+@media (max-width: $media-lg)
+	.sidebar__contents
+		position: static
+		max-width: 100%
+		width: auto
+
+// Logo
+.sidebar__logo__wrapper
 	font-size: 1.2rem
+	margin-bottom: 1rem
 
 	img
 		display: inline
 		max-width: 80px
 
+.sidebar__logo
+	line-height: .9
+	span
+		font-size: .8rem
+
+// Inner Nav
+.sidebar__nav
+	margin-bottom: 1rem
+
 .sidebar__nav a
-	transition: .3s
 	display: flex
 	align-items: center
+	padding: .4rem 0
+	font-size: 80%
+	transition: .3s
 
 	&::before
 		content: ''
@@ -52,10 +81,12 @@
 	&:hover, &:focus
 		text-decoration: none
 
+// Active
 .sidebar__nav__item--active
 	background: red
 	outline: 10px solid red
 
+// Social
 .sidebar__social
 	width: 100%
 	margin: 0 auto
@@ -63,12 +94,14 @@
 
 	img
 		max-width: 30px
+		margin: 0
 		opacity: .2
 		transition: .3s
 
 		&:hover, &:active, &:target
 			opacity: 1
 
+// Sub-sidebar
 .sub-sidebar
 	display: none
 	z-index: 100
@@ -81,15 +114,19 @@
 	padding: 1rem
 	width: 100%
 
-@media (max-width: $media-md)
+.sidebar__about
+	border-bottom: 2px solid $gray-3
+	margin-bottom: 1rem
+
+@media (max-width: $media-lg)
 	.sidebar__about
 		text-align: center
 		max-width: 80%
 		margin: 0 auto
-		margin-bottom: 2rem
-		border-bottom: 2px solid $gray-8
+		margin-bottom: 1rem
+		border-bottom: 2px solid $gray-3
 
-	.sidebar__logo
+	.sidebar__logo__wrapper
 
 			margin: 0 auto
 
@@ -101,7 +138,7 @@
 
 	.sidebar a
 		text-align: center
-		padding: 0 .5rem
+
 		display: inline
 
 	.sidebar__social
