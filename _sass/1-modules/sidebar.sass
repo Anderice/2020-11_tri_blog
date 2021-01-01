@@ -17,14 +17,16 @@
 		font-size: 90%
 
 	a
-		color: $primary
+		color: $gray-8
+		&:hover
+			color: $primary
 
 .sidebar__logo
 	font-size: 1.2rem
 
 	img
 		display: inline
-		max-width: 50px
+		max-width: 80px
 
 .sidebar__nav a
 	transition: .3s
@@ -36,7 +38,7 @@
 		display: inline-block
 		width: 10px
 		height: .1rem
-		background: $primary
+		background: $gray-8
 		margin-right: .5rem
 		transition: .3s
 
@@ -44,6 +46,7 @@
 		transform: translateX(10px)
 
 		&::before
+			background: $primary
 			height: 10px
 
 	&:hover, &:focus
