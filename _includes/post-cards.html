@@ -1,14 +1,14 @@
 <div class="post-cards container">
   {% for post in paginator.posts %}
   <div class="post-item">
-    <a href="{{ site.baseurl }}{{ post.url }}">
+    <a href="{{ base }}{{ post.url }}">
       <!-- <img src=" {{ post.image | relative_url }}" alt=""> -->
-      <img src="{{ site.baseurl }}/{{ post.image }}" alt="">
+      <img src="{{ base }}/{{ post.image }}" alt="">
 
     </a>
 
     <div class="post-item__content">
-      <a href="{{ site.baseurl }}{{ post.url }}">
+      <a href="{{ base }}{{ post.url }}">
         <h2 class="post-item__title">{{ post.title }}</h2>
       </a>
       <time class="post-item__date">{{ post.date | date_to_string }}</time>
