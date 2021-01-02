@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-{% include base.html %}
 {% include breadcrumbs.html %}
 <div class="post container">
+  {% include base.html %}
+
   <h2 class="post__title">{{ page.title }}</h2>
   {{ content }}
 </div>
