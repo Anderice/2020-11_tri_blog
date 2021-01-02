@@ -1,13 +1,10 @@
-{% include base.html %}
 <div class="post-cards container">
   {% for post in paginator.posts %}
   <div class="post-item">
     <a href="{{ base }}{{ post.url }}">
       <!-- <img src=" {{ post.image | relative_url }}" alt=""> -->
       <h1>{{ base }}</h1>
-      <h2>test</h2>
       <img src="{{ base }}/{{ post.image }}" alt="">
-
     </a>
 
     <div class="post-item__content">
