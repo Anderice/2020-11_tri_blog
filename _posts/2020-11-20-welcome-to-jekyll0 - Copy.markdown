@@ -14,12 +14,12 @@ tags: test testb
 ---
 
 
-
+{% include base.html %}
 {% include project-info.html %}
 
 
-![image]({{ page.base }}/{{ page.image }})
-
+![image]({{ base }}/{{ page.image }})
+a
 
 
 <img src="{{ './assets/imgs/placehold/3.jpg' | relative_url }}" alt="Site Logo">
