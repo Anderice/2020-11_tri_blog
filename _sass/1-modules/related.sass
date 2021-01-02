@@ -1,18 +1,24 @@
 .related
+	padding: 1rem 0
+	padding-bottom: 2rem
 	text-align: center
+	border-bottom: 2px solid $gray-3
+
+	.container
+		padding-top: 2rem
+		border-top: 4px dotted $gray-3
 
 	h2
-
 		margin-bottom: 2rem
 
 	h3
 		margin: 0
+		margin-top: 1.5rem
 
 .related-posts
 	display: flex
 	justify-content: center
 
-	flex-wrap: wrap
 
 	img
 		margin: 0 auto
@@ -20,18 +26,9 @@
 		max-width: 100%
 		transform: scale(1.05)
 
-
-	li
-		max-width: 300px
-		border-radius: 5px
-		margin: 0 1rem
-		transition: .3s
-
-		&:hover
-			transform: translateY(-10px)
-			background: white
+.related-posts__item
+	margin: 0 1rem
+	width: 100%
 
 
 .related__content
-	margin: 0 1rem
-	padding-bottom: .9rem

@@ -15,8 +15,6 @@
       <p>{{ site.description }}</p>
     </div>
 
-    <h1>{{ base }}</h1>
-
     <nav class="sidebar__nav">
       <a class="sidebar__nav__item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">首頁</a>
 
@@ -29,7 +27,7 @@
       {% for node in pages_list %}
       {% if node.title != null %}
       {% if node.layout == "page" %}
-      <a class="sidebar__nav__item" {% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+      <a class="sidebar__nav__item" {% if page.url == node.url %} active{% endif %}" href="{{ base }}{{ node.url }}">{{ node.title }}</a>
       {% endif %}
       {% endif %}
       {% endfor %}
