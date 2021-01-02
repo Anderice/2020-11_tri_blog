@@ -18,8 +18,8 @@ tags: test testb
 {% include project-info.html %}
 
 
-![image]({{ site.baseurl }}/{{ page.image }})
-a
+![image]({{ page.base }}/{{ page.image }})
+
 
 
 <img src="{{ './assets/imgs/placehold/3.jpg' | relative_url }}" alt="Site Logo">
