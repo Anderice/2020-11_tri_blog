@@ -4,7 +4,7 @@
     <div class="related-posts">
       {% for post in site.related_posts limit:2 %}
       <a class="related-posts__item" href="{{ post.url }}">
-        <img src="{{ base }}/{{ post.image }}" alt="">
+        <img src="{{ site.baseurl }}/{{ post.image }}" alt="">
         <div class="related__content">
           <h3>{{ post.title }}</h3>
           <small>{{ post.date | date_to_string }}</small>

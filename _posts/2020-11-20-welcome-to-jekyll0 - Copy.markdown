@@ -14,11 +14,11 @@ tags: test testb
 ---
 
 
-{% include base.html %}
+
 {% include project-info.html %}
 
 
-![image]({{ base }}/{{ page.image }})
+![image]({{ site.baseurl }}/{{ page.image }})
 a
 
 
