@@ -19,7 +19,7 @@ tags: test testb
 
 
 ![image]({{ base }}/{{ page.image }})
-a
+
 
 
 <img src="{{ './assets/imgs/placehold/3.jpg' | relative_url }}" alt="Site Logo">

@@ -3,7 +3,7 @@
   <div class="sidebar__contents">
     <div class="sidebar__about">
       <h1 class="sidebar__logo__wrapper">
-        <a href="{{ site.baseurl }}">
+        <a href="{{ base }}">
 
           <img src="{{ base }}/assets/imgs/logo/group-logo.gif" alt="Site Logo">
           <div class="sidebar__logo">
@@ -17,7 +17,7 @@
     </div>
 
     <nav class="sidebar__nav">
-      <a class="sidebar__nav__item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">首頁</a>
+      <a class="sidebar__nav__item{% if page.url == site.baseurl %} active{% endif %}" href="{{ base }}">首頁</a>
 
       {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -35,13 +35,15 @@
     </nav>
 
     <div class="sidebar__social">
-      <ul>
-        <li>
-          <a href="https://instagram.com" target="_blank">
-            <img src='{{ base }}/assets/imgs/social/ig.svg' alt="Instagram">
-          </a>
-        </li>
-      </ul>
+      <a href="https://instagram.com" target="_blank">
+        <img src='{{ base }}/assets/imgs/social/ig.svg' alt="Instagram">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src='{{ base }}/assets/imgs/social/ig.svg' alt="Instagram">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src='{{ base }}/assets/imgs/social/ig.svg' alt="Instagram">
+      </a>
     </div>
   </div>
 </aside>

@@ -1,4 +1,7 @@
-
+Array.prototype.forEach.call(
+  document.querySelectorAll('.myElements'),
+  el => new SimpleBar()
+);
 /* When the user scrolls down*/
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
