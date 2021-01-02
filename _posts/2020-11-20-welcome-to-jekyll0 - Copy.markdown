@@ -13,12 +13,12 @@ image: assets/imgs/placehold/1.jpg
 tags: test testb
 ---
 
-  <h1>ggg{{test}}{{base}}</h1>
+
 
 {% include project-info.html %}
 
 
-![image]({{ base }}/{{ page.image }})
+![image]({{ page.base }}/{{ page.image }})
 
 
 
