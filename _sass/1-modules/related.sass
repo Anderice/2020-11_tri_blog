@@ -1,15 +1,31 @@
 .related
-	padding: 1rem 0
+	padding: 3rem 0
 	padding-bottom: 2rem
 	text-align: center
 	border-bottom: 2px solid $gray-3
 
-	.container
-		padding-top: 2rem
-		border-top: 4px dotted $gray-3
-
 	h2
+		white-space: nowrap
+		display: flex
+		align-items: center
+		justify-content: center
 		margin-bottom: 2rem
+
+		&::before
+			content: ''
+			display: inline-block
+			width: 30%
+			height: 2px
+			margin-right: 40px
+			background: $gray-5
+
+		&::after
+			content: ''
+			display: inline-block
+			width: 30%
+			height: 2px
+			margin-left: 40px
+			background: $gray-5
 
 	h3
 		margin: 0
@@ -24,11 +40,11 @@
 		margin: 0 auto
 		margin-bottom: 1rem
 		max-width: 100%
-		transform: scale(1.05)
+
 
 .related-posts__item
 	margin: 0 1rem
-	width: 100%
+
 
 
 .related__content

@@ -7,14 +7,34 @@ categories: jekyll update
 ---
 《看見中科大的問題！》
 
+{:toc}
+- TOC
 
-#改善生活，從發現問題開始。
+<style>
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+}
+
+#markdown-toc ul {
+    list-style: decimal;
+}
+
+#markdown-toc {
+    border: 1px solid #aaa;
+    padding: 1.5em;
+    list-style: decimal;
+    display: inline-block;
+}
+</style>
+
+# 改善生活，從發現問題開始。
 
 
 (自製一張指標類黑人問號梗圖)
 
 
-##指示牌看攏嘸?
+## 指示牌看攏嘸?
 
 
 回顧起開學至今的各種迷路經驗，三角東東團隊在中科大生活了一年之久，早就走遍了校園的每一個角落，想必對它在了解不過，卻依舊逃不過方向錯亂的下場，胡亂安排的處事位置、大小不一的圖示指標，都是造成我們原地徘徊，困惑不已的主要原因。

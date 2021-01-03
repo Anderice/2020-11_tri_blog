@@ -9,8 +9,10 @@
 
 // Theme overwrite
 .theme-tri-dondon
-	background: $gray-2
-
+	background: transparent
+	background-color: $gray-2
+	background-image: url("https://www.transparenttextures.com/patterns/lined-paper-2.png")
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 .theme-tri-dondon .sidebar
 	background: $gray-2
 	color: $gray-9
@@ -25,12 +27,15 @@ html
 	line-height: 1.65
 	letter-spacing: 1px
 
+body
+
+
 h1, h2, h3, h4, h5, h6
 	color: inherit
 
 @media (max-width: $media-sm)
 	html
-		outline: 10px solid red
+
 		font-size: 18px
 
 @media (max-width: $media-md)

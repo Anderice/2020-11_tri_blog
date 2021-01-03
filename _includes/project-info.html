@@ -7,16 +7,18 @@
   <div class="project-info__details" data-simplebar>
     <ul>
       <li>
-        <h3>
-          日期年份</h3>
+        <h3>日期年份</h3>
+        <span>{{ page.date | date: "%b %d, %Y" }}</span>
+      </li>
+      <li>
+        <h3>分類</h3>
+        <span>{{ page.categories}}</span>
+      </li>
+      <li>
+        <h3>日期年份</h3>
         <span>{{ page.date | date: "%b %d, %Y" }}</span>
       </li>
 
-      <li>
-        <h3>參與人員</h3>
-        <span>三角東東團隊 TriDonDon</span><br>
-        <span>王耀輝、黃宗瑋、周圻恆、陳郁馨、陳奕杉</span>
-      </li>
 
     </ul>
   </div>

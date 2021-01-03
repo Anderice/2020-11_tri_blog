@@ -12,21 +12,31 @@ image: assets/imgs/placehold/1.jpg
 
 tags: test testb
 ---
-
-
 {% include base.html %}
 {% include project-info.html %}
 
 
-![image]({{ base }}/{{ page.image }})
 
 
 
-<img src="{{ './assets/imgs/placehold/3.jpg' | relative_url }}" alt="Site Logo">
+<h1>test</h1>
+
+
+
+
+<div class="post__inner" markdown="1">
+
+
+
+{% capture img1 %}{{ base }}/{{ page.image }}{% endcapture %}
+{% include image-figure.html url= img1 description="Bird" %}
+
+<!-- <img src="{{ './assets/imgs/placehold/3.jpg' | relative_url }}" alt="Site Logo">
 
 <img src="{{ './assets/imgs/placehold/4.jpg' | relative_url }}" alt="Site Logo">
 
-<img src="{{ './assets/imgs/placehold/5.jpg' | relative_url }}" alt="Site Logo">
+<img src="{{ './assets/imgs/placehold/5.jpg' | relative_url }}" alt="Site Logo"> -->
+
 ## 當代的社會意識
 
 
@@ -34,7 +44,8 @@ tags: test testb
 
 
 在生活上的每一處都能看見設計的影子。設計雖然並非是生活必需品，但是有了設計能夠讓我們身處的世界更佳的完好。
-
+{% capture img1 %}{{ base }}/{{ page.image }}{% endcapture %}
+{% include image-figure.html url= img1 description="Bird" %}
 
 (學校門口照片)
 
@@ -67,3 +78,5 @@ tags: test testb
 
 
 圖/文：國立臺中科技大學 商業設計系/三角東東團隊/緣來是這樣！
+
+</div>

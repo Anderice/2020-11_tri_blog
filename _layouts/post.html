@@ -3,8 +3,26 @@ layout: default
 ---
 
 {% include breadcrumbs.html %}
-<div class="post container">
-  <h2 class="post__title">{{ page.title }}</h2>
-  {{ content }}
+<div class="post container-fluid">
+  <div class="post__title"">
+    <span>{{ page.date | date: "%b %d, %Y" }}</span>
+    <h2>{{ page.title }}</h2>
+
+    <div class=" tags">
+    {% assign sortedTags = page.tags | sort %}
+
+    {% for tag in sortedTags %}
+    <span class="tag">
+      <small> <a href="{{ base }}/tag/{{ tag }}"> #{{ tag }}</a></small>
+    </span>
+    {% endfor %}
+    <br>
+  </div>
+
 </div>
+
+
+{{ content }}
+</div>
+{% include share-buttons.html %}
 {% include related-post.html %}

@@ -1,15 +1,76 @@
 .post
   margin-top: 8rem
-  max-width: $post-max-width
   margin-bottom: 2rem
+  padding: 0 1rem
 
-@media (max-width: $media-md)
-  .post
-    margin-top: 0
+
+
+
+
+.post__inner
+
+  p
+    text-align: justify
+    margin: 0 auto
+    max-width: 900px
+    padding: 0 2rem
+    padding-right: 5rem
+
+  h2, h3, h4
+    max-width: 900px
+    margin: 0 auto
+    padding: 0 2rem
+    text-align: left
+
+
+  img
+    margin: 0 auto
+
+
 
 .post__hero
   width: 100%
   max-height: 300px
 
 .post__title
-  font-size: $font-size-xxxxxxlarge
+  position: relative
+  max-width: 1300px
+  margin: 0 auto
+
+  padding-left: 2rem
+
+  h2
+    margin-top: .4rem
+    font-size: $font-size-xxxxxxlarge
+
+  &::before
+    z-index: -1
+    position: absolute
+    left: -250px
+    top: -350px
+    content: ''
+    display: block
+    width: 500px
+    height: 500px
+    background: orange
+
+@media (max-width: $media-xl)
+  .post
+    padding-left: 3rem
+    padding-right: 3rem
+
+  .post__title
+    padding: 0
+
+@media (max-width: $media-md)
+  .post
+    margin-top: 2rem
+    padding-left: 1rem
+    padding-right: 1rem
+
+  .post__title
+    padding-right: 2rem
+
+  .post__inner
+    p
+      padding-right: 2rem

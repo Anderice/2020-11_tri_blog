@@ -1,11 +1,9 @@
-
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge
 
 # Permalinks
 permalink:        none
-
 
 # Setup
 title:            '三角東東'
@@ -14,9 +12,6 @@ description:      '三角東東是……等專業人士共同組成，讓美感�
 
 
 # baseurl:          './'
-
-
-
 
 # Need GitHub Page -> '/2020-11_tri_blog'
 # baseurl:          '2020-11_tri_blog'
@@ -28,21 +23,15 @@ description:      '三角東東是……等專業人士共同組成，讓美感�
 
 # url:              'anderice.github.io'
 
-
-
-
 author:
-  name:           'Mark Otto'
+  name:           'Riceball'
   url:            https://twitter.com/mdo
 
 paginate: 6
 paginate_path: "/page:num/"
 
-
-
 # Custom vars
 version:          2.1.0
-
 github:
   repo:           https://github.com/poole/hyde
 
@@ -51,9 +40,11 @@ plugins:
   - jekyll-gist
   - redcarpet
 
+
 sass:
   sass_dir: _sass
   style: compressed
+
 
 
 defaults:

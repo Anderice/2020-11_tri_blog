@@ -1,7 +1,8 @@
 .project-info
+  max-width: 1300px
   display: flex
-  margin: 2rem 0
-
+  margin: 2rem auto
+  padding: 0 2rem
 
   li
     margin-bottom: 1.5rem
@@ -20,22 +21,33 @@
 
 .project-info__details
   width: 100%
-  max-width: 300px
+  max-width: 250px
+  min-width: 130px
   max-height: 300px
-
+  font-size: 90%
 
 .project-info__description
-  width: 80%
+  min-width: 300px
   margin-right: 2rem
 
-@media (max-width: $media-lg)
+@media (max-width: $media-xl)
   .project-info
+    padding: 0
     flex-direction: column
 
   .project-info__details
+    margin: 0 auto
     margin-top: 2rem
+    max-width: inherit
 
 
+    ul
+      display: flex
+      justify-content: space-around
 
-.project-info__details
-  font-size: 90%
+    li
+
+@media (max-width: $media-lg)
+  .project-info__description
+
+    margin-right: 0
