@@ -7,15 +7,11 @@
     </a>
 
     <div class="post-item__content">
-      <span class="post-item__tags">
+
+      {% include tag-current-have.html type ="post" %}
 
 
 
-        <a href="#">{{ post.tags }} </a>
-
-
-
-      </span>
       <a href="{{ base }}{{ post.url }}">
         <h2 class="post-item__title">{{ post.title }}</h2>
       </a>

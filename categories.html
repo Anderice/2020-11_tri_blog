@@ -41,7 +41,8 @@ title: 文章分類
 
 
   {% for category in site.categories %}
-  <h3 class="categories-list-heading" id="{% capture cats %}{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}{% endcapture %}">{{ category[0] | downcase }}
+  <h3 class="categories-list-heading" id="{% capture cats %}{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}{% endcapture %}
+  ">{{ category[0] | downcase }}
 
     {% case cats %}
     {% when 'design' %}
