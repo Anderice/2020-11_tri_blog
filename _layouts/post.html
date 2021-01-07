@@ -4,16 +4,12 @@ layout: default
 
 {% include breadcrumbs.html %}
 <div class="post container-fluid">
-  <div class="post__title"">
+  <div class="post__title">
     <span>{{ page.date | date: "%b %d, %Y" }}</span>
     <h2>{{ page.title }}</h2>
-
     {% include tag-current-have.html type ="page" %}
-
+  </div>
+  {{ content }}
 </div>
-
-
-{{ content }}
-</div>
-{% include share-buttons.html %}
-{% include related-post.html %}
+{% include post-share-buttons.html %}
+{% include post-related-post.html %}

@@ -1,4 +1,15 @@
-<figure class="image-figure">
+{% capture bleed-status %}{{ include.bleed }}{% endcapture %}
+{% assign var-bleed-status = bleed-status %}
+
+{% if var-bleed-status == 'none' %}
+{% assign class = 'image-figure--disable' %}
+
+{% else %}
+{% assign class = 'image-figure--active' %}
+
+{% endif %}
+
+<figure class="image-figure {{class}}">
   <img src="{{ include.url }}" alt="{{ include.description }}">
   <figcaption>{{ include.description }}</figcaption>
 </figure>
