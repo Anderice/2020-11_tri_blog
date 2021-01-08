@@ -1,19 +1,16 @@
-{% capture type %}{{ include.type }}{% endcapture %}
+{% capture var %}{{ include.type }}{% endcapture %}
 
-{% assign class = 'a'  %}
 
-{% if type == 'page' %}
-{% assign class = 'tags--post' %}
+{% if var == 'page' %}
 {% assign sortedTags = page.tags | sort %}
-{% elsif type == 'post' %}
+{% else %}
 {% assign sortedTags = post.tags | sort %}
 {% endif %}
 
-
-<div class="tags {{ class }}">
+<div class="tags">
   {% for tag in sortedTags %}
   <span class="tag">
-    <small> <a href="{{ base }}/tag/{{ tag }}">#{{ tag }}</a></small>
+    <small> <a href="{{ base }}/tag/{{ tag }}"> #{{ tag }}</a></small>
   </span>
   {% endfor %}
   <br>

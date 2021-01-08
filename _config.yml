@@ -14,7 +14,7 @@ description:      '三角東東是……等專業人士共同組成，讓美感�
 # baseurl:          './'
 
 # Need GitHub Page -> '/2020-11_tri_blog'
-baseurl:          ''
+baseurl:          '2020-11_tri_blog'
 
 # Need _site output -> '.'
 # baseurl:          ''

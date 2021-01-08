@@ -6,25 +6,18 @@
 
   <div class="project-info__details" data-simplebar>
     <ul>
-
-      <li>
-        <h3>文章作者</h3>
-        <a href="{{ page.author-link }}" target="_blank">
-          <span>{{ page.author }}</span>
-        </a>
-      </li>
       <li>
         <h3>日期年份</h3>
         <span>{{ page.date | date: "%b %d, %Y" }}</span>
       </li>
       <li>
         <h3>分類</h3>
-        <a href="{{base}}/categories/{{page.categories}}">
-          <span>{{ page.categories | upcase | remove: '"' | remove: '[' | remove: ']' }}</span>
-
-        </a>
+        <span>{{ page.categories}}</span>
       </li>
-
+      <li>
+        <h3>日期年份</h3>
+        <span>{{ page.date | date: "%b %d, %Y" }}</span>
+      </li>
 
 
     </ul>

@@ -2,30 +2,30 @@
 layout: post
 title: "科技與智慧兼具，重新定義中科大之色！"
 date: 2020-11-20 21:22:52 +0800
-author: 'riceball'
-author-link: 'https://google.com'
-categories: design
-tags: 重設計 社會設計 指標系統
-image: assets/imgs/placehold/1.jpg
+categories: categories
 description: '近年來，在社會設計與通用設計的意識抬頭下，各個場所的設計系統都逐漸得到重視。以近期臺灣設計研究院的校園優化、台灣大學的校徽、陽明交通大學的設計案…等來看，這些設計趨勢開始嘗試與校園做結合近年來，在社會設計與通用設計的意識抬頭下，<br><br>
 各個場所的設計系統都逐漸得到重視。以近期臺灣設計研究院的校園優化、台灣大學的校徽、陽明交通大學的設計案…等來看，這些設計趨勢開始嘗試與校園做結合。'
 
 excerpt: 近年來，在社會設計與通用設計的意識抬頭下，各個場所的設計系統都逐漸得到重視。台灣大學的校徽、陽明交通大學的設計案…。
 
+image: assets/imgs/placehold/1.jpg
+
+tags: test testb
 ---
 {% include base.html %}
-{% include post-project-info.html %}
+{% include project-info.html %}
 
 
 
 
+
+
+<div class="post__inner" markdown="1">
 
 
 
 {% capture img1 %}{{ base }}/{{ page.image }}{% endcapture %}
-{% include image-figure.html url= img1 description="Bird" bleed="none" %}
 {% include image-figure.html url= img1 description="Bird" %}
-
 
 <!-- <img src="{{ './assets/imgs/placehold/3.jpg' | relative_url }}" alt="Site Logo">
 
@@ -74,3 +74,5 @@ excerpt: 近年來，在社會設計與通用設計的意識抬頭下，各個�
 
 
 圖/文：國立臺中科技大學 商業設計系/三角東東團隊/緣來是這樣！
+
+</div>

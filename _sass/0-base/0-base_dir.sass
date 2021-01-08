@@ -2,11 +2,10 @@
 @import "normalize"
 @import "test"
 @import "vars"
-@import "base"
 
 // Library
-// @import "poole"
-// @import "hyde"
+@import "poole"
+@import "hyde"
 
 // Theme overwrite
 .theme-tri-dondon
@@ -17,3 +16,51 @@
 .theme-tri-dondon .sidebar
 	background: $gray-2
 	color: $gray-9
+
+// Basic overwrite
+::selection
+	background: $primary
+	color: $gray-4
+
+html
+	font-family: "Public Sans", "Noto Sans TC", Helvetica, Arial, sans-serif
+	line-height: 1.65
+	letter-spacing: 1px
+
+body
+
+
+h1, h2, h3, h4, h5, h6
+	color: inherit
+
+@media (max-width: $media-sm)
+	html
+
+		font-size: 18px
+
+@media (max-width: $media-md)
+	html
+		font-size: 18px
+
+@media (max-width: $media-lg)
+	html
+		font-size: 18px
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+a
+	color: $primary-passive
+
+	&:hover, &:focus
+		text-decoration: none
+
+em
+	font-style: normal
+	font-weight: bold
+
+img
+	max-width: 100%
+	object-fit: cover
