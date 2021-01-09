@@ -5,28 +5,42 @@
 	display: flex
 	flex-wrap: wrap
 
-
 .event-item
-	overflow: hidden
+	border-radius: $img-border-radius
+	font-size: .85rem
+
 	position: relative
-	cursor: pointer
 	flex: 1
-	margin: .3rem
-	min-height: 300px
-	min-width: 500px
+	margin: .5rem
+	max-height: 300px
+
+	&:nth-last-of-type(odd)
+		transform: translateY(-1rem)
 
 	img
-		position: absolute
-		width: 100%
+		width: 50%
 		height: 100%
-		top: 0
-		left: 0
-		z-index: -1
+		float: left
+		border-radius: 0
+		margin-top: -1rem
+		margin-right: -.3rem
+		border-radius: $img-border-radius
 
-@media (max-width: $media-sm)
+.event-item__content
+	background: white
+	overflow: auto
+	padding: 1rem
+
+	h3
+		margin: 0
+		margin-top: .5rem
+
+
+@media (max-width: $media-xxl)
 	.event
 		flex-direction: column
 
 	.event-item
 		min-width: auto
 		width: 100%
+		margin: 2rem 0

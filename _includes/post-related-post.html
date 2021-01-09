@@ -1,0 +1,17 @@
+<div class="related">
+  <div class="container">
+    <h2>延伸閱讀</h2>
+    <div class="related-posts">
+      {% for post in site.related_posts limit:2 %}
+      <a class="related-posts__item" href="{{ base }}{{ post.url }}">
+        <img src="{{ base }}/{{ post.image }}" alt="">
+        <div class="related__content">
+          <h3>{{ post.title }}</h3>
+          <small>{{ post.date | date_to_string }}</small>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
