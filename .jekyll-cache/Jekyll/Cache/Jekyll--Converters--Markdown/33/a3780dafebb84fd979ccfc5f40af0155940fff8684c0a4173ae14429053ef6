@@ -1,0 +1,16 @@
+I"�
+<figure class="image-figure image-figure--disable">
+  <img src="/assets/imgs/page/universal/placeholder/placeholder2.jpg" alt="Cat" />
+  <figcaption>Cat</figcaption>
+</figure>
+
+<h2 id="起源">起源</h2>
+<p>這裡是一篇文章簡單測試這個部落格的功能、紀錄製作上遇到的問題和如何解決。緣起是要做一個網頁設計的專案，恰好<a href="/about">三角東東</a>——同樣是學校內課程的課程正在做中科大改造計畫。考量投入進去的心血如果單作為一個課堂作業真的是太可惜，所以就用<a href="https://jekyllrb.com/">Jekyll</a>這款靜態網站生產器去製作一個模組規格化的網站，把邏輯、參數都寫好又有什麼活動、團隊、個人部落格三兩下就能拉出來重建啦~</p>
+
+<h2 id="開發環境">開發環境</h2>
+<ul>
+  <li>Jekyll</li>
+  <li><a href="https://github.com/poole/hyde">Hyde Theme</a></li>
+  <li>Blue</li>
+</ul>
+:ET

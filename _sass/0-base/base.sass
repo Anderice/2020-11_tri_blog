@@ -1,10 +1,10 @@
-*
+*, *::before, *::after
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
 	box-sizing: border-box
 
 ul
-	list-style-type: none
+
 	padding: 0
 	margin: 0
 
@@ -32,7 +32,7 @@ h4, h5, h6
 
 html
 	font-family: "Public Sans", "Noto Sans TC", Helvetica, Arial, sans-serif
-	line-height: 1.65
+	line-height: 1.85
 	letter-spacing: 1px
 
 @media (min-width: 48em)
@@ -83,3 +83,14 @@ pre
 		font-size: 100%
 		color: inherit
 		background-color: transparent
+
+blockquote
+	background: $gray-1
+	max-width: 600px
+	margin: 0 auto
+	border-left: .5rem solid $primary-passive
+	padding: 0.5rem 1.5rem
+	border-radius: $img-border-radius
+	font-size: 115%
+	font-weight: 600
+	letter-spacing: 3px

@@ -6,7 +6,7 @@ layout: default
 <div class="post container-fluid">
   <div class="post__title">
     <span>{{ page.date | date: "%b %d, %Y" }}</span>
-    <h2>{{ page.title }}</h2>
+    <h2>{{ page.title-tc }}</h2>
     {% include tag-current-have.html type ="page" %}
   </div>
   {{ content }}

@@ -18,10 +18,15 @@
       {% if forloop.last %}
       <span>»</span>
       <br class="breadcrumbs__newline">
-      <em>{{ page.title }}</em>
+      <em>{{ page.title-tc }}</em>
       {% else %}
-      <span>»</span> <a
-        href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+      <span>»</span>
+      <a href="
+      {% assign crumb_limit = forloop.index | plus: 1 %}
+      {% if page.layout == 'post' %}/categories{% endif %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">
+
+
+        {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
       {% endif %}
       {% endfor %}
     </div>

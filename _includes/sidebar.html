@@ -1,38 +1,41 @@
 {% include base.html %}
 <aside class="sidebar">
   <div class="sidebar__contents">
-    <div class="sidebar__about">
-      <h1 class="sidebar__logo__wrapper">
-        <a href="{{ base }}">
+    <div class="">
+      <div class="sidebar__about">
+        <h1 class="sidebar__logo__wrapper">
+          <a href="{{ base }}">
 
-          <img src="{{ base }}/assets/imgs/logo/group-logo.gif" alt="Site Logo">
-          <div class="sidebar__logo">
-            {{ site.title }}
-            <br>
-            <span>Triangle Don Don</span>
-          </div>
-        </a>
-      </h1>
-      <p>{{ site.description }}</p>
+            <img src="{{ base }}/assets/imgs/page/universal/logo/group-logo.gif" alt="Site Logo">
+            <div class="sidebar__logo">
+              {{ site.title }}
+              <br>
+              <span>Triangle Don Don</span>
+            </div>
+          </a>
+        </h1>
+        <p>{{ site.description }}</p>
+      </div>
+
+      <nav class="sidebar__nav">
+        <a class="sidebar__nav__item{% if page.url == site.baseurl %} active{% endif %}" href="{{ base }}">首頁</a>
+
+        {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+        {% endcomment %}
+
+        {% assign pages_list = site.pages %}
+        {% for node in pages_list %}
+        {% if node.title != null %}
+        {% if node.layout == "page" %}
+        <a class="sidebar__nav__item" {% if page.url == node.url %} active{% endif %}" href="{{ base }}{{ node.url }}">{{ node.title }}</a>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </nav>
     </div>
 
-    <nav class="sidebar__nav">
-      <a class="sidebar__nav__item{% if page.url == site.baseurl %} active{% endif %}" href="{{ base }}">首頁</a>
-
-      {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-      {% if node.title != null %}
-      {% if node.layout == "page" %}
-      <a class="sidebar__nav__item" {% if page.url == node.url %} active{% endif %}" href="{{ base }}{{ node.url }}">{{ node.title }}</a>
-      {% endif %}
-      {% endif %}
-      {% endfor %}
-    </nav>
 
     <div class="sidebar__social">
       <a href="https://instagram.com" target="_blank">

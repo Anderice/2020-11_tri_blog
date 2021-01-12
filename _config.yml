@@ -14,7 +14,7 @@ description:      '三角東東是……等專業人士共同組成，讓美感�
 # baseurl:          './'
 
 # Need GitHub Page -> '/2020-11_tri_blog'
-baseurl:          ''
+# baseurl:          ''
 
 # Need _site output -> '.'
 # baseurl:          ''
@@ -54,4 +54,4 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
 
-      image: ./assets/imgs/placehold.png
+      image: /assets/imgs/page/universal/placeholder/placeholder.jpg

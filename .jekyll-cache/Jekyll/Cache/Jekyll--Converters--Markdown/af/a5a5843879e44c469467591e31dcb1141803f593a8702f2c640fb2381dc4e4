@@ -1,0 +1,352 @@
+I"�K<style>
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+}
+
+#markdown-toc ul {
+    list-style: decimal;
+}
+
+#markdown-toc {
+    border: 1px solid #aaa;
+    padding: 1.5em;
+    list-style: decimal;
+    display: inline-block;
+}
+</style>
+
+<ul id="markdown-toc">
+  <li><a href="#the-first-section" id="markdown-toc-the-first-section">The first section.</a>    <ul>
+      <li><a href="#a-simple-list" id="markdown-toc-a-simple-list">A simple list</a></li>
+      <li><a href="#an-ordered-list" id="markdown-toc-an-ordered-list">An ordered list</a></li>
+      <li><a href="#a-table-with-header-and-footer" id="markdown-toc-a-table-with-header-and-footer">A table with header and footer</a></li>
+    </ul>
+  </li>
+  <li><a href="#lets-see-some-headlines" id="markdown-toc-lets-see-some-headlines">Let’s see some headlines</a>    <ul>
+      <li><a href="#one-below-the-other" id="markdown-toc-one-below-the-other">One below the other</a>        <ul>
+          <li><a href="#each-one-is-another-level" id="markdown-toc-each-one-is-another-level">Each one is another level</a>            <ul>
+              <li><a href="#so-that-its-easy-to-spot" id="markdown-toc-so-that-its-easy-to-spot">So that it’s easy to spot</a>                <ul>
+                  <li><a href="#which-styles-are-off" id="markdown-toc-which-styles-are-off">Which styles are off</a>                    <ul>
+                      <li><a href="#or-even-missing-at-all" id="markdown-toc-or-even-missing-at-all">Or even missing at all</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#things-still-missing-from-this-page" id="markdown-toc-things-still-missing-from-this-page">Things still missing from this page</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit" id="markdown-toc-lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>    <ul>
+      <li><a href="#proin-mattis-enim-sit-amet-lacus-convallis-rutrum-nec-in-nisi" id="markdown-toc-proin-mattis-enim-sit-amet-lacus-convallis-rutrum-nec-in-nisi">Proin mattis enim sit amet lacus convallis rutrum nec in nisi.</a>        <ul>
+          <li><a href="#cras-venenatis-quam-sed-purus-auctor-tincidunt" id="markdown-toc-cras-venenatis-quam-sed-purus-auctor-tincidunt">Cras venenatis quam sed purus auctor tincidunt.</a>            <ul>
+              <li><a href="#morbi-at-eros-at-justo-consequat-congue" id="markdown-toc-morbi-at-eros-at-justo-consequat-congue">Morbi at eros at justo consequat congue.</a>                <ul>
+                  <li><a href="#sed-ac-tortor-ultricies-mollis-justo-ut-efficitur-nunc" id="markdown-toc-sed-ac-tortor-ultricies-mollis-justo-ut-efficitur-nunc">Sed ac tortor ultricies, mollis justo ut, efficitur nunc.</a>                    <ul>
+                      <li><a href="#proin-tempus-lorem-eget-magna-tristique-elementum" id="markdown-toc-proin-tempus-lorem-eget-magna-tristique-elementum">Proin tempus lorem eget magna tristique elementum.</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#inline-html-elements" id="markdown-toc-inline-html-elements">Inline HTML elements</a></li>
+      <li><a href="#heading" id="markdown-toc-heading">Heading</a>        <ul>
+          <li><a href="#code" id="markdown-toc-code">Code</a></li>
+          <li><a href="#gists-via-github-pages" id="markdown-toc-gists-via-github-pages">Gists via GitHub Pages</a></li>
+          <li><a href="#lists" id="markdown-toc-lists">Lists</a></li>
+          <li><a href="#images" id="markdown-toc-images">Images</a></li>
+          <li><a href="#tables" id="markdown-toc-tables">Tables</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>To help tweak the visual appearance of a Github Page, this page contains many different elements recognized by see <a href="https://kramdown.gettalong.org/syntax.html">kramdown</a>.</p>
+
+<p>The first section of of this page helps you to quickly spot obvious errors, the <a href="#lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit">second section</a> contains longer text to finetune things.</p>
+
+<h2 id="the-first-section">The first section.</h2>
+
+<p>such as <a href="#">links that lead nowhere</a>, text that is <strong>bold</strong>, or in <em>italics</em>, or even <strong><em>bold and italics</em></strong>.</p>
+
+<h3 id="a-simple-list">A simple list</h3>
+
+<ul>
+  <li>some things need listing</li>
+  <li>this list is unordered</li>
+  <li>and also contains <strong>bold</strong> text
+    <ul>
+      <li>as well as items which are sub elements</li>
+      <li>and more…</li>
+    </ul>
+  </li>
+  <li>this list ends now</li>
+</ul>
+
+<h3 id="an-ordered-list">An ordered list</h3>
+
+<ol>
+  <li>This is the first element</li>
+  <li>This, however, is the second one
+    <ol>
+      <li>which has three sub elements</li>
+      <li>but one of those is missing</li>
+    </ol>
+  </li>
+  <li>another element</li>
+</ol>
+
+<h3 id="a-table-with-header-and-footer">A table with header and footer</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">First Column</th>
+      <th style="text-align: center">Second Column</th>
+      <th style="text-align: right">Fifth Column</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">this</td>
+      <td style="text-align: center">that</td>
+      <td style="text-align: right">something else</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">is this</td>
+      <td style="text-align: center">table</td>
+      <td style="text-align: right">striped?</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: right">footer?</td>
+      <td style="text-align: center">empty ➤</td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tfoot>
+</table>
+
+<h1 id="lets-see-some-headlines">Let’s see some headlines</h1>
+
+<h2 id="one-below-the-other">One below the other</h2>
+
+<h3 id="each-one-is-another-level">Each one is another level</h3>
+
+<h4 id="so-that-its-easy-to-spot">So that it’s easy to spot</h4>
+
+<h5 id="which-styles-are-off">Which styles are off</h5>
+
+<h6 id="or-even-missing-at-all">Or even missing at all</h6>
+
+<p>Here is some standard text for comparison.</p>
+
+<h3 id="things-still-missing-from-this-page">Things still missing from this page</h3>
+
+<ul>
+  <li>footnotes</li>
+  <li>tables (with header and footer)</li>
+  <li>code blocks (inline and fenced)</li>
+  <li>pictures
+    <ul>
+      <li>normal</li>
+      <li>normal, but really large (should be resized to fit text width)</li>
+      <li>inline</li>
+      <li>definition lists</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<p><strong>find some longer text below, headlines are levels 1-6</strong></p>
+
+<hr />
+
+<h1 id="lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit">Lorem ipsum dolor sit amet consectetur adipiscing elit</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae nunc eu sem suscipit tincidunt. Sed vel neque eu arcu fermentum maximus id ac velit. <strong>Proin malesuada elit id nunc finibus pellentesque. Sed vehicula laoreet posuere.</strong> Vestibulum vitae pretium sem. Curabitur fermentum tellus sed libero hendrerit luctus. Sed nec ligula ac sapien bibendum commodo. Nullam vitae pulvinar tellus, venenatis consequat sem. Praesent id ante at est sodales gravida. Nulla condimentum mollis velit scelerisque rutrum. Integer bibendum, dui sed facilisis placerat, massa tortor hendrerit dui, a sollicitudin felis metus porttitor diam.</p>
+
+<h2 id="proin-mattis-enim-sit-amet-lacus-convallis-rutrum-nec-in-nisi">Proin mattis enim sit amet lacus convallis rutrum nec in nisi.</h2>
+
+<p>In vel enim nibh. Quisque dapibus nunc condimentum mattis rhoncus. Mauris bibendum quam in libero ultricies, ut auctor urna ultricies. <em>Nullam lobortis tellus dui, ut consequat risus ultrices dapibus.</em> Praesent lobortis nunc et libero suscipit facilisis. Sed est ipsum, maximus non tortor et, vulputate euismod quam. Cras in elit semper neque faucibus consequat ac id arcu. Mauris ut nibh efficitur, volutpat neque eget, commodo est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum a neque tempor eros malesuada laoreet et vitae felis. Aenean purus nibh, auctor non hendrerit id, congue vitae metus. Suspendisse a augue interdum, sagittis dui ac, scelerisque purus. Morbi quis consequat metus.</p>
+
+<h3 id="cras-venenatis-quam-sed-purus-auctor-tincidunt">Cras venenatis quam sed purus auctor tincidunt.</h3>
+
+<p>Donec ac ultrices mauris, id bibendum justo. Nulla facilisi. Curabitur semper mauris ut nisl auctor fermentum id nec urna. Ut cursus faucibus odio id fringilla. Nam convallis sapien fringilla arcu tempor iaculis. Mauris cursus gravida consectetur. Donec malesuada arcu at dui maximus, id faucibus libero tincidunt. Quisque facilisis id ante a accumsan. Nulla facilisi. Fusce sed egestas dui.</p>
+
+<h4 id="morbi-at-eros-at-justo-consequat-congue">Morbi at eros at justo consequat congue.</h4>
+
+<p>Nulla ac mollis massa. Vivamus et nisi dictum, mattis libero sit amet, rutrum libero. Morbi ac purus et nibh luctus tempor. <a href="#">Maecenas pretium</a> risus eu mollis maximus. Mauris eu ligula dignissim, consequat sem a, ultricies enim. Fusce congue pharetra erat, quis hendrerit orci mattis pharetra. Nullam ut fringilla velit. Donec porta et metus sed vulputate. Aliquam at ante nisl. Morbi at massa vel odio aliquet blandit. Cras rhoncus luctus augue ut hendrerit. Maecenas nulla nisi, rutrum ac risus vitae, efficitur tincidunt diam.</p>
+
+<h5 id="sed-ac-tortor-ultricies-mollis-justo-ut-efficitur-nunc">Sed ac tortor ultricies, mollis justo ut, efficitur nunc.</h5>
+
+<p>Aliquam ullamcorper tellus elit, at hendrerit eros varius quis. Morbi sed malesuada ipsum, eleifend consectetur ipsum. Nam placerat neque nulla, vehicula efficitur purus rutrum sit amet. Suspendisse rutrum vel diam eget faucibus. Pellentesque mollis tincidunt nibh at eleifend. Mauris ut ultrices turpis. Praesent vitae semper justo. Nam id ornare diam. Etiam urna ante, interdum nec augue ac, porta aliquet quam. Sed varius massa eu nunc interdum, non condimentum elit imperdiet. In vel efficitur purus. Duis lacus purus, commodo sed luctus vel, consectetur vel nisi.</p>
+
+<ul>
+  <li>Donec varius felis id orci faucibus varius.</li>
+  <li>In rhoncus dolor quis leo congue eleifend.</li>
+  <li>Etiam ac lorem non nunc congue tincidunt rhoncus in ligula.</li>
+  <li>Donec venenatis augue viverra aliquet posuere.</li>
+  <li>Fusce porttitor sapien id sapien eleifend, eget dignissim nunc interdum.</li>
+</ul>
+
+<h6 id="proin-tempus-lorem-eget-magna-tristique-elementum">Proin tempus lorem eget magna tristique elementum.</h6>
+
+<p>Phasellus consequat blandit odio. Pellentesque in facilisis sapien, vitae luctus ante. In euismod ante eu lorem luctus tempor. Suspendisse mattis lacinia felis, nec pharetra velit aliquet sed. Pellentesque sodales orci auctor, pulvinar mi et, tristique dui. Donec mollis velit magna, quis sollicitudin massa dignissim ultricies. Etiam felis nisl, pellentesque vel felis ac, gravida blandit ante. Aenean turpis tellus, vestibulum et orci et, efficitur tempor felis. Cras a lorem sed diam tempor molestie egestas vitae felis. Nullam cursus feugiat consectetur. Nam cursus erat et elit laoreet ornare. Donec dapibus eget mi et sagittis. Suspendisse a consectetur metus. Vivamus eros ipsum, egestas quis aliquet ut, congue a nunc. Etiam fermentum lectus malesuada facilisis molestie.</p>
+
+<ol>
+  <li>Etiam malesuada erat in euismod viverra.</li>
+  <li>Aliquam vitae erat vel magna consequat faucibus.</li>
+  <li>Quisque a libero vitae est molestie finibus.</li>
+  <li>Aenean dapibus lectus consequat velit imperdiet, et molestie lacus blandit.</li>
+  <li>Donec at urna eget ipsum gravida molestie venenatis egestas lectus.</li>
+</ol>
+
+<ul>
+  <li>This will become a table of contents (this text will be scrapped).</li>
+</ul>
+
+<div class="message">
+  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+</div>
+
+<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+
+<blockquote>
+  <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+</blockquote>
+
+<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+<h2 id="inline-html-elements">Inline HTML elements</h2>
+
+<p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+
+<ul>
+  <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+  <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+  <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+  <li>Citations, like <cite>— Mark otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+  <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+  <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+</ul>
+
+<p>Most of these elements are styled by browsers with few modifications on our part.</p>
+
+<h2 id="heading">Heading</h2>
+
+<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+<h3 id="code">Code</h3>
+
+<p>Cum sociis natoque penatibus et magnis dis <code class="language-plaintext highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Example can be run directly in your JavaScript console</span>
+
+<span class="c1">// Create a function that takes two arguments and returns the sum of those arguments</span>
+<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="c1">// Call the function</span>
+<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="c1">// &gt; 8</span></code></pre></figure>
+
+<p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+
+<h3 id="gists-via-github-pages">Gists via GitHub Pages</h3>
+
+<p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>
+
+<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.</p>
+
+<h3 id="lists">Lists</h3>
+
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+<ul>
+  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+  <li>Donec id elit non mi porta gravida at eget metus.</li>
+  <li>Nulla vitae elit libero, a pharetra augue.</li>
+</ul>
+
+<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+
+<ol>
+  <li>Vestibulum id ligula porta felis euismod semper.</li>
+  <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+  <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+</ol>
+
+<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+
+<dl>
+  <dt>HyperText Markup Language (HTML)</dt>
+  <dd>The language used to describe and define the content of a Web page</dd>
+
+  <dt>Cascading Style Sheets (CSS)</dt>
+  <dd>Used to describe the appearance of Web content</dd>
+
+  <dt>JavaScript (JS)</dt>
+  <dd>The programming language used to build advanced Web sites and applications</dd>
+</dl>
+
+<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<h3 id="images">Images</h3>
+
+<p>Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.</p>
+
+<p><img src="http://placehold.it/800x400" alt="placeholder" title="Large example image" />
+<img src="http://placehold.it/400x200" alt="placeholder" title="Medium example image" />
+<img src="http://placehold.it/200x200" alt="placeholder" title="Small example image" /></p>
+
+<h3 id="tables">Tables</h3>
+
+<p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Upvotes</th>
+      <th>Downvotes</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Totals</td>
+      <td>21</td>
+      <td>23</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<hr />
+
+<p>Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a></p>
+:ET

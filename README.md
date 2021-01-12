@@ -1,118 +1,46 @@
-# Hyde
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
 
-Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>1410821043ì‹Æ?Œğ</title>
+</head>
 
-![Hyde screenshot](https://f.cloud.github.com/assets/98681/1831228/42af6c6a-7384-11e3-98fb-e0b923ee0468.png)
+<body>
+  <div class="content">
+    <div class="content-intro">
+      <img src="imgs/logo.gif" alt="logo">
+      <h1>–Ô•Å‰Ûì‹Æ?Œğ</h1>
+      <span>20210112»ì</span>
+    </div>
 
-
-## Contents
-
-- [Usage](#usage)
-- [Options](#options)
-  - [Sidebar menu](#sidebar-menu)
-  - [Sticky sidebar content](#sticky-sidebar-content)
-  - [Themes](#themes)
-  - [Reverse layout](#reverse-layout)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
-
-
-## Usage
-
-Hyde is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setupâ€”just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
-
-
-## Options
-
-Hyde includes some customizable options, typically applied via classes on the `<body>` element.
-
-
-### Sidebar menu
-
-Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
-
-```
----
-layout: page
-title: About
----
-```
-
-**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
+    <div class="content-team">
+      <div class="content-team__description">
+        <h2>‘gˆõ–¼šd<br> (OŠp“Œ“Œ)</h2>
+        <ul>
+          <li>1410821004 <br><em>’ÂˆèŠ]</em></li>
+          <li>1410721005 <br><em>’Âšó™</em></li>
+          <li>1410821043 <br><em>?@?</em></li>
+          <li>1410821047 <br><em>‰¤—s‹P</em></li>
+          <li>1410821048 <br><em>üš«œ‘</em></li>
+        </ul>
+      </div>
+      <div class="content-team__img">
+        <img src="imgs/team.jpg" alt="team">
+      </div>
+    </div>
 
 
-### Sticky sidebar content
-
-By default Hyde ships with a sidebar that affixes it's content to the bottom of the sidebar. You can optionally disable this by removing the `.sidebar-sticky` class from the sidebar's `.container`. Sidebar content will then normally flow from top to bottom.
-
-```html
-<!-- Default sidebar -->
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    ...
+    <div class="content-description">
+      <h2>?–¾</h2>
+      <p>”c‘—¿ã™B“Github”äŠr—eˆÕ‹yX“®C‘ŠŠrFTPŠÒ—vè“®ã™BBŠˆÈ¿g—pˆÈ‰º˜AŒ‹~</p>
+    </div>
+    <div class="btn-group">
+      <a class="btn btn--fluid" href="https://github.com/Anderice/2020-11_tri_blog">›“ˆÄŠJá¢Œ´n?</a>
+      <a class="btn btn--fluid btn--solid" href="https://anderice.github.io/2020-11_tri_blog/">›“ˆÄ—aæT</a>
+    </div>
   </div>
-</div>
-
-<!-- Modified sidebar -->
-<div class="sidebar">
-  <div class="container">
-    ...
-  </div>
-</div>
-```
-
-
-### Themes
-
-Hyde ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
-
-![Hyde in red](https://f.cloud.github.com/assets/98681/1831229/42b0b354-7384-11e3-8462-31b8df193fe5.png)
-
-There are eight themes available at this time.
-
-![Hyde theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
-
-To use a theme, add anyone of the available theme classes to the `<body>` element in the `default.html` layout, like so:
-
-```html
-<body class="theme-base-08">
-  ...
 </body>
-```
 
-To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/hyde/blob/master/public/css/hyde.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
-
-### Reverse layout
-
-![Hyde with reverse layout](https://f.cloud.github.com/assets/98681/1831230/42b0d3ac-7384-11e3-8d54-2065afd03f9e.png)
-
-Hyde's page orientation can be reversed with a single class.
-
-```html
-<body class="layout-reverse">
-  ...
-</body>
-```
-
-
-## Development
-
-Hyde has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
-
-
-## Author
-
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
-
-
-## License
-
-Open sourced under the [MIT license](LICENSE.md).
-
-<3
+</html>
