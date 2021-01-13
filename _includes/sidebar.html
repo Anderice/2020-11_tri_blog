@@ -32,7 +32,7 @@
         {% if node.layout == "page" %}
 
 
-        <a class="sidebar__nav__item {% if page.url == node.url %}sidebar__nav__item--active{% endif %} {{current-class}}" href="{{ base }}{{ node.url }}">{{ node.title }}</a>
+        <a class="sidebar__nav__item {% if page.url == node.url %}sidebar__nav__item--active{% endif %} {{current-class}}" href="{{ base }}{{ node.url }}">{{ node.title-tc }}</a>
 
         {% endif %}
         {% endif %}
