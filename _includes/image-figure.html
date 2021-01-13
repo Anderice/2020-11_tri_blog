@@ -5,21 +5,18 @@
 {% assign var-figcaption-status = figcaption-status %}
 
 {% if var-bleed-status == 'none' %}
-{% assign bleed-class = 'image-figure--disable' %}
-
 {% else %}
-{% assign bleed-class = 'image-figure--active' %}
-
+{% assign bleed-class = 'image-figure--bleed' %}
 {% endif %}
 
-{% if var-figcaption-status == 'none' %}
+{% if var-figcaption-status == 'on' %}
+{% assign figcaption-class = '' %}
+{% else %}
 {% assign figcaption-class = 'image-figure--figcaption-off' %}
 
 {% endif %}
 
-
-
-<figure class="image-figure {{bleed-class}}">
+<figure class="image-figure {{ bleed-class }}">
   <img src="{{ base }}{{ include.url }}" alt="{{ include.description }}">
-  <figcaption class="{{figcaption-class}}">{{ include.description }}</figcaption>
+  <figcaption class="{{ figcaption-class }}">{{ include.description }}</figcaption>
 </figure>
