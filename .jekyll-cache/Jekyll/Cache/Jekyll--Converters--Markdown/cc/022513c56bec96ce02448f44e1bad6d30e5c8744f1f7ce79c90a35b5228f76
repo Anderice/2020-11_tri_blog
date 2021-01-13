@@ -1,7 +1,0 @@
-I"`<style>
-#markdown-toc::before {
-    content: "Contents";
-    font-weight: bold;
-}
-</style>
-:ET
