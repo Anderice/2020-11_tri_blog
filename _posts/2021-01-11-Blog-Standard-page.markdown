@@ -20,6 +20,7 @@ tags: jekyll test
 -   [Jekyll Static Site Generator](https://jekyllrb.com/)
 -   [Liquid Template Language](https://shopify.github.io/liquid/)
 -   HTML
+    -   [Markdown](https://kramdown.gettalong.org/)
 -   CSS
     -   Sass
     -   [Pool Theme](https://github.com/poole/poole) (參考架構)
@@ -33,9 +34,11 @@ tags: jekyll test
 ## 之前的努力
 之後就決定用[Jekyll](https://jekyllrb.com/)這款靜態網站生產器去製作一個模組規格化的網站。當然羅馬不是一兩天造成的，想嘗試寫這類網站的念頭有兩年多了(？)，第一次做這類嘗試是在兩年前有嘗試寫過自己的部落格，如下圖。
 
-{% include image-figure.html url= '/assets/imgs/post/2021-01-11-Blog-Standard-page/old.jpg' description="2018-blog" %}
+{% include image-figure.html url= '/assets/imgs/post/2021-01-11-blog-standard-page/old.jpg' description="2018-blog" %}
 
-{% include image-figure.html url= '/assets/imgs/post/2021-01-11-Blog-Standard-page/old2.jpg' description="2018-blog" %}
+{% include image-figure.html url= '/assets/imgs/post/2021-01-11-blog-standard-page/old2.jpg' description="2018-blog" %}
+
+{% include image-figure.html url= '/assets/imgs/post/2021-01-11-blog-standard-page/sketch.jpg' description="2018-blog" %}
 
 
 

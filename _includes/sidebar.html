@@ -18,7 +18,8 @@
       </div>
 
       <nav class="sidebar__nav">
-        <a class="sidebar__nav__item{% if page.url == site.baseurl %} active{% endif %}" href="{{ base }}">首頁</a>
+        <a class="sidebar__nav__item{% if page.url == site.url %} active{% endif %}" href="{{ base }}">首頁</a>
+
 
         {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -29,7 +30,10 @@
         {% for node in pages_list %}
         {% if node.title != null %}
         {% if node.layout == "page" %}
-        <a class="sidebar__nav__item" {% if page.url == node.url %} active{% endif %}" href="{{ base }}{{ node.url }}">{{ node.title }}</a>
+
+
+        <a class="sidebar__nav__item {% if page.url == node.url %}sidebar__nav__item--active{% endif %} {{current-class}}" href="{{ base }}{{ node.url }}">{{ node.title }}</a>
+
         {% endif %}
         {% endif %}
         {% endfor %}
