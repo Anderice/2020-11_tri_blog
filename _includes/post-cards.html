@@ -1,6 +1,6 @@
 <div class="post-cards">
   {% for post in paginator.posts %}
-  <div class="post-item" data-simplebar>
+  <div class="post-item">
     <a href="{{ base }}{{ post.url }}">
       <!-- <img src=" {{ post.image | relative_url }}" alt=""> -->
       <img src="{{ base }}{{ post.image }}" alt="">
@@ -23,13 +23,13 @@
       <!-- Word maxium -->
       {{ post.excerpt | strip_html | truncatewords: 26  }}
       {% endif %}
-      <span class="post-item__categories">分類於——
-        <a href="/categories/#{{post.categories}}{% if post.categories == empty %}uncategorized{% endif %}">
-          {% if post.categories == empty %}未分類{% endif %}
-          {{ post.categories }}
-        </a>
-      </span>
     </div>
+    <span class="post-item__categories">分類於——
+      <a href="/categories/#{{post.categories}}{% if post.categories == empty %}uncategorized{% endif %}">
+        {% if post.categories == empty %}未分類{% endif %}
+        {{ post.categories }}
+      </a>
+    </span>
   </div>
 
   {% endfor %}
