@@ -1,65 +1,64 @@
-
 .page-progress
-  position: absolute
-  top: 0
-  left: 0
-  width: auto
-  background: $gray-4
-  height: 100%
-  transition: .3s
+	position: absolute
+	top: 0
+	left: 0
+	width: auto
+	background: $gray-4
+	height: 100%
+	transition: .3s
 
 .breadcrumbs-container
-  z-index: 500
-  position: fixed
-  top: 0
-  left: 350px
-  right: 0
-  border-bottom: 2px solid $gray-3
-  transition: top .3s
+	z-index: 500
+	position: fixed
+	top: 0
+	left: 350px
+	right: 0
+	border-bottom: 2px solid $gray-3
+	transition: top .3s
 
 @media (max-width: $media-lg)
-  .breadcrumbs-container
-    left: 0
+	.breadcrumbs-container
+		left: 0
 
 .breadcrumbs
-  letter-spacing: 2px
-  display: flex
-  align-items: center
-  background: $gray-2
+	letter-spacing: 2px
+	display: flex
+	align-items: center
+	background: $gray-2
 
-  a, em, span
-    position: relative
-    z-index: 501
-    opacity: .7
+	a, em, span
+		position: relative
+		z-index: 501
+		opacity: .7
 
-    &:hover, &:active, &:target
-      opacity: 1
+		&:hover, &:active, &:target
+			opacity: 1
 
-  span
-    margin: 0 .5rem
+	span
+		margin: 0 .5rem
 
 @media (max-width: $media-sm)
-  .breadcrumbs
-    font-size: .9rem
+	.breadcrumbs
+		font-size: .9rem
 
 .breadcrumbs__back
-  position: relative
-  display: flex
-  align-items: center
-  justify-content: center
-  width: 50px
-  height: 70px
-  margin-right: 1rem
-  background: $primary-passive
-  border-right: 2px solid $gray-3
-  color: $gray-1
-  transition: .3s
-  &:hover
-    background: $primary
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 50px
+	height: 70px
+	margin-right: 1rem
+	background: $primary-passive
+	border-right: 2px solid $gray-3
+	color: $gray-1
+	transition: .3s
+	&:hover
+		background: $primary
 
 .breadcrumbs__newline
-  display: none
+	display: none
 
 @media (max-width: $media-xl)
-  .breadcrumbs__newline
-    display: block
+	.breadcrumbs__newline
+		display: block
