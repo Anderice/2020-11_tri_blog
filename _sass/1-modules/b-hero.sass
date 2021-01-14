@@ -45,7 +45,6 @@
 
 .hero__conntent
 	margin: 0 auto
-
 	z-index: 1
 
 	.btn-group
@@ -64,14 +63,12 @@
 		color: $gray-10
 		letter-spacing: 2px
 		line-height: 1.55
-	  font-size: clamp(4rem, 8.333333vw, 3.5rem)
+		font-size: clamp(4rem, 8.333333vw, 3.5rem)
 
 	h3
 		color: $gray-9
 		margin: 0
 		font-size: 1rem
-
-
 
 .btn--hero
 	color: $gray-4
@@ -80,21 +77,15 @@
 	background: $primary-passive
 	border: transparent
 
-	&:hover
-		letter-spacing: 5px
-
-		&::after
-			transform: none
-
-
 	&::after
 		transform: translateX(-5px)
 		content: '>'
 		margin-left: .6rem
 		display: inline-block
 		transition: .3s
-//
-// @media (max-width: $media-md)
-// 	.hero__conntent
-// 		h2
-// 			font-weight: normal
+
+	&:hover
+		letter-spacing: 5px
+
+		&::after
+			transform: none
