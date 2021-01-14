@@ -1,18 +1,25 @@
+
 .page-progress
   position: absolute
   top: 0
   left: 0
+  width: auto
   background: $gray-4
   height: 100%
   transition: .3s
 
 .breadcrumbs-container
   z-index: 500
-  position: relative
-  border-bottom: 2px solid $gray-3
   position: fixed
   top: 0
+  left: 350px
+  right: 0
+  border-bottom: 2px solid $gray-3
   transition: top .3s
+
+@media (max-width: $media-lg)
+  .breadcrumbs-container
+    left: 0
 
 .breadcrumbs
   letter-spacing: 2px

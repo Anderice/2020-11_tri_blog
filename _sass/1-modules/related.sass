@@ -1,50 +1,24 @@
 .related
-	padding: 3rem 0
-	padding-bottom: 2rem
+	display: flex
+	justify-content: center
+	flex-direction: column
 	text-align: center
-	border-bottom: 2px solid $gray-3
 
-	h2
-		white-space: nowrap
-		display: flex
-		align-items: center
-		justify-content: center
-		margin-bottom: 2rem
 
-		&::before
-			content: ''
-			display: inline-block
-			width: 30%
-			height: 2px
-			margin-right: 40px
-			background: $gray-5
+.related__article
+	text-align: left
 
-		&::after
-			content: ''
-			display: inline-block
-			width: 30%
-			height: 2px
-			margin-left: 40px
-			background: $gray-5
+	margin: 0 .5rem
+	display: inline-block
+	width: 45%
+
+	img
+		min-height: 300px
+		width: 100%
 
 	h3
 		margin: 0
-		margin-top: 1.5rem
-
-.related-posts
-	display: flex
-	justify-content: center
-
-
-	img
-		margin: 0 auto
 		margin-bottom: 1rem
-		max-width: 100%
 
-
-.related-posts__item
-	margin: 0 1rem
-
-
-
-.related__content
+.related__article__count
+	font-size: .8rem

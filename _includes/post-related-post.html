@@ -1,23 +1,4 @@
-<div class="related">
-  <div class="container">
-    <h2>延伸閱讀</h2>
-    <div class="related-posts">
-      {% for post in site.related_posts limit:2 %}
-      <a class="related-posts__item" href="{{ base }}{{ post.url }}">
-        <img src="{{ base }}/{{ post.image }}" alt="">
-        <div class="related__content">
-          <h3>{{ post.title-tc }}</h3>
-          <small>{{ post.date | date_to_string }}</small>
-        </div>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-
-</div>
-
-
-{% assign showRelatedPosts = 3 %}
+{% assign showRelatedPosts = 1 %}
 
 {% capture posts %}
 {% for post in site.posts %}
@@ -32,6 +13,7 @@
 {% endif %}
 {% endfor %}
 
+
 {% assign tagsTotal = matchingTags.size %}
 
 {% if tagsTotal < 10 %}
@@ -41,13 +23,13 @@
 {% endif %}
 
 |
-<article>
-  <strong>{{ tagsTotal }} tags</strong>
+<article class="related__article">
+  <strong class="related__article__count">{{ tagsTotal }} 個相同標籤</strong>
   <header>
-    <h5>{{ post.title }}</h5>
+    <h3>{{ post.title-tc }}</h3>
   </header>
   <section>
-    <a href="{{ site.baseurl }}{{ post.url }}">
+    <a href="{{ base }}{{ post.url }}">
       <img width="320" height="200" src="{{ post.image }}" class="img-fluid" alt="{{ post.image }}" />
     </a>
   </section>
@@ -59,12 +41,30 @@
 {% endcapture %}
 
 {% assign relatedPosts = posts | split: '|' | sort | reverse %}
-
-<header>
-  <h4>You might also like:</h4>
-  <hr>
 </header>
 
-{% for i in (0..showRelatedPosts) %}
-{{ relatedPosts[i] }}
-{% endfor %}
+
+<div class="related">
+  <div class="title-box">
+    <h2>相關文章</h2>
+    <span>Related Posts</span>
+  </div>
+  <div class="">
+    {% for i in (0..showRelatedPosts) %}
+    {{ relatedPosts[i] }}
+    {% endfor %}
+
+  </div>
+
+</div>
+
+
+
+
+{% assign tagsTotal = matchingTags.size %}
+
+{% if tagsTotal < 10 %}
+{% assign tagsTotal = tagsTotal | prepend: "0" %}
+{% else %}
+{% assign tagsTotal = tagsTotal  %}
+{% endif %}

@@ -11,8 +11,7 @@
 	align-items: center
 	flex-direction: column
 
-
-	&::after
+	&::before
 		top: 0
 		left: 0
 		position: absolute
@@ -20,22 +19,33 @@
 		display: block
 		width: 100%
 		height: 100%
-		background: black
-		opacity: .1
+		background: white
+		opacity: .25
 
-	&::before
-		bottom: 0
-		left: 0
-		position: absolute
+	&::after
 		content: ''
 		display: block
+		position: absolute
+		bottom: 0
+		left: 0
+		z-index: 1
 		width: 100%
-		height: 150px
+		height: 30%
+		background: transparent
 		background: rgb(233,236,239)
-		opacity: .2
+		background: linear-gradient(360deg, rgba(0,0,0,.2) 0%, rgba(233,236,239,0) 100%)
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+
+@media (max-width: $media-sm)
+	.hero
+		padding: 1rem
 
 .hero__conntent
 	margin: 0 auto
+
 	z-index: 1
 
 	.btn-group
@@ -45,21 +55,23 @@
 			margin-left: 0
 
 	span
-		border: 2px solid $gray-2
-		color: $gray-2
+		border-bottom: 5px solid $primary
+		color: $primary
 		padding: .1rem .5rem
 		margin: 0 .3rem
 
 	h2
-		color: $gray-1
+		color: $gray-10
 		letter-spacing: 2px
 		line-height: 1.55
-		font-size: calc(1em + 2vw)
+	  font-size: clamp(4rem, 8.333333vw, 3.5rem)
 
 	h3
-		color: $gray-3
+		color: $gray-9
 		margin: 0
 		font-size: 1rem
+
+
 
 .btn--hero
 	color: $gray-4
