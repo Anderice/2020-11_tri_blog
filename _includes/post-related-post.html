@@ -35,7 +35,7 @@
   </header>
   <section>
     <a href="{{ base }}{{ post.url }}">
-      <img width="320" height="200" src="{{ post.image }}" class="img-fluid" alt="{{ post.image }}" />
+      <img width="320" height="200" src="{{ base }}{{ post.image }}" class="img-fluid" alt="{{ post.image }}" />
     </a>
   </section>
   <small>{{ matchingTags | join: ", " }}</small>
