@@ -5,8 +5,8 @@
 
   </div>
 
-  <div class="project-info__details" data-simplebar="">
-    <ul>
+  <div class="project-info__details">
+    <ul data-simplebar="">
 
       <li>
         <h3>文章作者</h3>
