@@ -5,8 +5,9 @@
 	justify-content: center
 	padding: 0
 	text-align: left
-	min-width: 350px
+	min-width: 230px
 	border-right: 2px solid $gray-3
+
 
 @media (max-width: $media-lg)
 	.sidebar
@@ -19,13 +20,11 @@
 	display: flex
 	flex-direction: column
 	justify-content: space-between
-	width: 350px
-	text-align: center
+	width: 230px
+	padding: 2rem 0
 	position: fixed
-	padding: 1rem 1.5rem
 
-	p
-		font-size: .8rem
+
 
 @media (max-width: $media-lg)
 	.sidebar__contents
@@ -35,29 +34,36 @@
 
 // Logo
 .sidebar__logo__wrapper
+	text-align: center
 	font-size: 1.2rem
 	margin-bottom: 1rem
+	padding: 1rem 1.5rem
+	padding-bottom: 2rem
+	margin: 0
+
+
 
 	img
 		display: inline
-		max-width: 80px
+		max-width: 60px
 
 .sidebar__logo
 	line-height: .9
 	margin-top: 1rem
 	color: $gray-10
+
 	span
 		font-size: .8rem
 
 // Inner Nav
 .sidebar__nav
-	margin-bottom: 1rem
+	margin: 0 1.5rem
 
 .sidebar__nav a
 	display: flex
 	align-items: center
 	padding: .4rem 0
-	font-size: 80%
+	font-size: 70%
 	transition: .3s
 
 	&::before
@@ -94,6 +100,7 @@
 
 // Social
 .sidebar__social
+	text-align: center
 	padding-top: 1.5rem
 	border-top: 2px solid $gray-3
 

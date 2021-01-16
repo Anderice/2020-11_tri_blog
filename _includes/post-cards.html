@@ -57,7 +57,7 @@
     {% elsif page == 1 %}
     <a class="pagination-list" href="{{ '/' | relative_url }}">{{ page }}</a>
     {% else %}
-    <a class="pagination-list" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    <a class="pagination-list" href="{{ site.paginate_path | relative_url | replace: ':num', page}}">{{ page }}</a>
     {% endif %}
     {% endfor %}
 
